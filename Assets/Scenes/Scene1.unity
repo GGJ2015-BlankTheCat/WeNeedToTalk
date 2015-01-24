@@ -267,7 +267,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 461222908}
   m_Layer: 0
-  m_Name: Note Pad
+  m_Name: NotePad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,6 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53bae9c7f52aa44659d1d187cf456cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
 --- !u!4 &911037103
 Transform:
   m_ObjectHideFlags: 0
@@ -611,6 +612,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b56c34419de5e644b6dfab264e29112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentEntry:
+    title: 
+    tags: []
+    body: []
+  CurrentLine: 0
+  lastBodyLine: 0
 --- !u!1 &1808461587
 GameObject:
   m_ObjectHideFlags: 0
