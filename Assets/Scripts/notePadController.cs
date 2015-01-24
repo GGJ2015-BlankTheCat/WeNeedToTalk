@@ -33,14 +33,14 @@ public class notePadController : MonoBehaviour {
 
 	public void MoveUp() {
 		if (selected == 0) {
-			selected = choices.Length--;
+			selected = choices.Length - 1;
 		} else {
 			selected--;
 		}
 	}
 
 	public void MoveDown() {
-		if (selected == choices.Length--) {
+		if (selected == choices.Length - 1) {
 			selected = 0;
 		} else {
 			selected++;

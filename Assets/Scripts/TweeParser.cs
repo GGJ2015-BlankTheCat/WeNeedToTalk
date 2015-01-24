@@ -28,7 +28,7 @@ public class TweeParser : MonoBehaviour {
 
 
 
-		string[] rawEntries = tweeSource.Split (new string[]{"::"}, System.StringSplitOptions.None); 
+		string[] rawEntries = tweeSource.Split (new string[]{"::"}, System.StringSplitOptions.RemoveEmptyEntries); 
 
 
 		foreach (string currentRawEntry in rawEntries) {
@@ -36,7 +36,8 @@ public class TweeParser : MonoBehaviour {
 
 			tweeEntry currentEntry = new tweeEntry();
 
-			int firstLineIndex = currentRawEntry.IndexOf("\n");	
+			int firstLineIndex = currentRawEntry.IndexOf("\n");
+
 			string firstLine = currentRawEntry.Substring(0, firstLineIndex);
 
 			if(firstLine.Contains("[")){

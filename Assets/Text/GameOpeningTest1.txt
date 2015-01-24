@@ -1,0 +1,43 @@
+:: StoryTitle [Title]
+We Need to Talk - A Breakup Game of Super Proportions
+
+
+:: Game Opening [audio]
+Dr. Gil:  	Who is my next appointment?
+Receptionist: Raymond and Rodrigo are here to see you.  They want you to know that they have decided to break-up in thier relationship, but want your help in trying to keep thier, um, superhero partnership together.
+
+[[|Ray & Rod Introduce Themselves]]
+
+
+
+:: StoryAuthor [Author]
+Global Game Jamn 2015: "[blank] the Cat"
+
+
+:: Tell me why you are both here.
+Therapist:  Tell me why you are both here.
+Ray:  We’ve been together for like 15 years as a couple, and we’ve decided we want to break up.  It just isn’t working for us as a romantic relationship.  But we are also in partnership in business that we want to maintain.  But we don’t see a path for that and need your help.
+
+[[Tell me more, Ray.]]
+[[Rod, you’ve been awfully quiet.]]
+[[OMG! You guys are superheroes! What are your superpowers?]]
+
+
+
+
+
+
+:: Tell me more, Ray.
+Ray:  Rod just won't let me be great.
+
+
+
+
+:: Rod, you’ve been awfully quiet.
+
+
+
+:: OMG! You guys are superheroes! What are your superpowers? [disrespect]
+[[|Tell me why you are both here.]]
+
+

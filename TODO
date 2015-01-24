@@ -1,0 +1,13 @@
+[Programming]
+
+Needs:
+-> Parse Options Reasonably
+-> Game flows in a demo
+--> Start Game [Add state]
+--> End Game [Add state]
+-> Music playing
+-> Emotion Changes Triggered
+
+Wants:
+-> Voice
+-> Cutscenes
