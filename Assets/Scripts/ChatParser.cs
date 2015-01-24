@@ -51,11 +51,8 @@ public class ChatParser : MonoBehaviour {
 		return CurrentLine == lastBodyLine;
 	}
 
-	void OnGui(){
-		textBox.GetComponent<Text> ().text = currentEntry.body [CurrentLine];
+	public string GetCurrentLine(){
+		return currentEntry.body[CurrentLine];	
 	}
 
-	void RenderNotePad() {
-
-	}
 }
