@@ -4,6 +4,7 @@ Needs:
 -> Parse Options Reasonably
 -> Game flows in a demo
 --> Start Game [Add state]
+--->Initialize Chat Parser better
 --> End Game [Add state]
 -> Music playing
 -> Emotion Changes Triggered
@@ -11,3 +12,4 @@ Needs:
 Wants:
 -> Voice
 -> Cutscenes
+-> Music Layering
