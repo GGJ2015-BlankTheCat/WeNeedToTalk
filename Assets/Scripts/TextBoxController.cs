@@ -15,7 +15,7 @@ public class TextBoxController : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		gameManagerObject = GameObject.Find ("gameManager");
+		gameManagerObject = GameObject.Find ("GameManager");
 		textInterfaceObject = GameObject.Find ("TextInterface");
 
 		gameManagerScript = gameManagerObject.GetComponent<GameManager> ();

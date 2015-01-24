@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		currentState = GameState.Dialogue;
-		chatHandlerScript = GameObject.Find ("ChatHandler");
+		chatHandlerScript = GameObject.Find ("GameManager");
 		chatHandler = chatHandlerScript.GetComponent<ChatHandler> ();
 	}
 	

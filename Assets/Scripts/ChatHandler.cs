@@ -26,6 +26,12 @@ public class ChatHandler : MonoBehaviour {
 
 		CurrentLine = 0;
 
+		//TODO: REAL INITIALIZE
+		currentEntry = new tweeEntry ();
+		currentEntry.title = "";
+		currentEntry.body = new string[1];
+		currentEntry.tags = new string[1];
+
 	}
 
 	void NextTwee(string title){

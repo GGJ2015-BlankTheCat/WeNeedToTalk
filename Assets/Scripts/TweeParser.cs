@@ -30,7 +30,6 @@ public class TweeParser : MonoBehaviour {
 
 		string[] rawEntries = tweeSource.Split (new string[]{"::"}, System.StringSplitOptions.RemoveEmptyEntries); 
 
-
 		foreach (string currentRawEntry in rawEntries) {
 				
 
@@ -43,17 +42,25 @@ public class TweeParser : MonoBehaviour {
 			if(firstLine.Contains("[")){
 				int tagPosition = firstLine.IndexOf("[");
 				string rawTags = firstLine.Substring(tagPosition).Trim(new char[]{'[',']'});
-				currentEntry.tags = rawTags.Split(new string[]{" "}, System.StringSplitOptions.None);
+				currentEntry.tags = rawTags.Split(new string[]{" "}, System.StringSplitOptions.RemoveEmptyEntries);
 				currentEntry.title = firstLine.Substring(0, tagPosition-1);
 			}else{
 				currentEntry.tags = null;
 				currentEntry.title = firstLine;
 			}
 				
-			//currentEntry.body = currentRawEntry.Substring(firstLineIndex);
 
-			currentEntry.body = currentRawEntry.Substring(firstLineIndex).Split(new string[]{"\n"}, System.StringSplitOptions.RemoveEmptyEntries);
+			string body = currentRawEntry.Substring(firstLineIndex);
+			Debug.Log (body);
+			Debug.Log ("BREAK------------");
+			string[] bodyArray = body.Split(new string[]{"\n"}, System.StringSplitOptions.RemoveEmptyEntries);
 
+			currentEntry.body = new string[bodyArray.Length];
+
+			bodyArray.CopyTo(currentEntry.body, 0);
+			for(int i = 0; i < bodyArray.Length; i++) {
+				Debug.Log (bodyArray[i]);
+			}
 
 			entries.Add(currentEntry.title, currentEntry);
 
