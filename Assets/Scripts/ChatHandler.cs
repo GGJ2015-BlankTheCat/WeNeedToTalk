@@ -26,11 +26,21 @@ public class ChatHandler : MonoBehaviour {
 
 		CurrentLine = 0;
 
+		foreach (string key in tweeEntries.Keys) {
+
+			Debug.Log("THE KEY IS:" + key.Trim ());
+
+			Debug.Log(key.Trim () == "StoryTitle");
+		}
+
 		//TODO: REAL INITIALIZE
-		currentEntry = new tweeEntry ();
+		/*currentEntry = new tweeEntry ();
 		currentEntry.title = "";
 		currentEntry.body = new string[1];
-		currentEntry.tags = new string[1];
+		currentEntry.tags = new string[1];	
+		*/
+		NextTwee("StoryTitle");
+		
 
 	}
 

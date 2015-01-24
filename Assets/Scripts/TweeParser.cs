@@ -43,10 +43,10 @@ public class TweeParser : MonoBehaviour {
 				int tagPosition = firstLine.IndexOf("[");
 				string rawTags = firstLine.Substring(tagPosition).Trim(new char[]{'[',']'});
 				currentEntry.tags = rawTags.Split(new string[]{" "}, System.StringSplitOptions.RemoveEmptyEntries);
-				currentEntry.title = firstLine.Substring(0, tagPosition-1);
+				currentEntry.title = firstLine.Substring(0, tagPosition-1).Trim ();
 			}else{
 				currentEntry.tags = null;
-				currentEntry.title = firstLine;
+				currentEntry.title = firstLine.Trim ();
 			}
 				
 
