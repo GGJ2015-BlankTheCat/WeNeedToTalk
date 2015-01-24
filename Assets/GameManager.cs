@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 	GameObject chatHandler;
 	ChatParser chatParser;
 
-	enum GameState{Choice, Dialogue};
+	public enum GameState{Choice, Dialogue};
 
 	public GameState currentState;
 

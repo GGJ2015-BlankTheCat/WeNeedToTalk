@@ -48,7 +48,7 @@ public class ChatParser : MonoBehaviour {
 	}
 
 	public bool IsLastLine() {
-		return CurrentLine == lastBodyLine);
+		return CurrentLine == lastBodyLine;
 	}
 
 	void OnGui(){
