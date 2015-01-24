@@ -6,7 +6,7 @@ using System.Text;
 
 
 
-public class ChatParser : MonoBehaviour {
+public class ChatHandler : MonoBehaviour {
 
 	GameObject gameManager;
 	GameObject textBox;
@@ -19,7 +19,7 @@ public class ChatParser : MonoBehaviour {
 	public int lastBodyLine;
 	
 	void Awake(){
-		gameManager = GameObject.Find ("gameManager");
+		gameManager = GameObject.Find ("GameManager");
 		tweeEntries = gameManager.GetComponent<TweeParser> ().entries;
 		textBox = GameObject.Find ("TextBox");
 		notePad = GameObject.Find ("Note Pad");
