@@ -9,7 +9,7 @@ public class TextBoxController : MonoBehaviour {
 	GameManager gameManagerScript;
 
 	GameObject textInterfaceObject;
-	ChatParser chatParserScript;
+	ChatHandler chatHandlerScript;
 
 	GameState currentState;
 
@@ -19,7 +19,7 @@ public class TextBoxController : MonoBehaviour {
 		textInterfaceObject = GameObject.Find ("TextInterface");
 
 		gameManagerScript = gameManagerObject.GetComponent<GameManager> ();
-		chatParserScript = textInterfaceObject.GetComponent<ChatParser> ();
+		chatHandlerScript = textInterfaceObject.GetComponent<ChatHandler> ();
 	}
 	
 	// Update is called once per frame
@@ -33,7 +33,7 @@ public class TextBoxController : MonoBehaviour {
 	void OnGUI() {
 		if (currentState == GameState.Dialogue) {
 
-			GUI.Label(new Rect(300, 300, 300,300), chatParserScript.GetCurrentLine());
+			GUI.Label(new Rect(300, 300, 300,300), chatHandlerScript.GetCurrentLine());
 
 
 			}

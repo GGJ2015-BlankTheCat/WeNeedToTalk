@@ -3,8 +3,8 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-	GameObject chatHandler;
-	ChatParser chatParser;
+	GameObject chatHandlerScript;
+	ChatHandler chatHandler;
 
 
 	public GameState currentState;
@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		currentState = GameState.Dialogue;
-		chatHandler = GameObject.Find ("ChatHandler");
-		chatParser = chatHandler.GetComponent<ChatParser> ();
+		chatHandlerScript = GameObject.Find ("ChatHandler");
+		chatHandler = chatHandlerScript.GetComponent<ChatHandler> ();
 	}
 	
 	// Update is called once per frame
@@ -29,8 +29,8 @@ public class GameManager : MonoBehaviour {
 			}
 		} else if (currentState == GameState.Dialogue) {
 			if (Input.GetKeyDown(KeyCode.Space)) {
-				chatParser.NextLine();
-				if (chatParser.IsLastLine()) {
+				chatHandler.NextLine();
+				if (chatHandler.IsLastLine()) {
 					currentState = GameState.Choice;
 				}
 			} else {
