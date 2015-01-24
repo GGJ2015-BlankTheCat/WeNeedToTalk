@@ -5,13 +5,7 @@ using System.Text;
 
 public class TweeParser : MonoBehaviour {
 
-	[System.Serializable]
-	public class tweeEntry{
-		public string title;
-		public string[] tags;
-		public string body;
 
-	}
 
 	public TextAsset tweeSourceAsset;
 	public string tweeSource;
@@ -54,10 +48,14 @@ public class TweeParser : MonoBehaviour {
 				currentEntry.tags = null;
 				currentEntry.title = firstLine;
 			}
+				
+			//currentEntry.body = currentRawEntry.Substring(firstLineIndex);
 
-				currentEntry.body = currentRawEntry.Substring(firstLineIndex);
+			currentEntry.body = currentRawEntry.Substring(firstLineIndex).Split(new string[]{"\n"}, System.StringSplitOptions.RemoveEmptyEntries);
 
 
+			entries.Add(currentEntry.title, currentEntry);
+k
 		}
 
 
@@ -65,4 +63,10 @@ public class TweeParser : MonoBehaviour {
 
 }
 
-
+[System.Serializable]
+public class tweeEntry{
+	public string title;
+	public string[] tags;
+	public string[] body;
+	
+}
