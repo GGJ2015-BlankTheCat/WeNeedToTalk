@@ -24,16 +24,16 @@ public class RayEmotions : MonoBehaviour {
 	public void SetEmotion(Emotion emot) {
 		switch (emot) {
 			case Emotion.Angry:
-				GameObject.Find ("Ray").GetComponent<SpriteRenderer> ().sprite = rayAngry;
+				GameObject.Find ("RaySprite").GetComponent<SpriteRenderer> ().sprite = rayAngry;
 				break;
 			case Emotion.Happy:
-				GameObject.Find ("Ray").GetComponent<SpriteRenderer> ().sprite = rayHappy;
+				GameObject.Find ("RaySprite").GetComponent<SpriteRenderer> ().sprite = rayHappy;
 				break;
 			case Emotion.Neutral:
-				GameObject.Find ("Ray").GetComponent<SpriteRenderer> ().sprite = rayNeutral;
+				GameObject.Find ("RaySprite").GetComponent<SpriteRenderer> ().sprite = rayNeutral;
 				break;
 			case Emotion.Sad:
-				GameObject.Find ("Ray").GetComponent<SpriteRenderer> ().sprite = raySad;
+				GameObject.Find ("RaySprite").GetComponent<SpriteRenderer> ().sprite = raySad;
 				break;
 			}
 		}

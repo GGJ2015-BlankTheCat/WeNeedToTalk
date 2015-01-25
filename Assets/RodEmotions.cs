@@ -24,16 +24,16 @@ public class RodEmotions : MonoBehaviour {
 	public void SetEmotion(Emotion emot) {
 		switch (emot) {
 		case Emotion.Angry:
-			GameObject.Find ("Rod").GetComponent<SpriteRenderer> ().sprite = rodAngry;
+			GameObject.Find ("RodSprite").GetComponent<SpriteRenderer> ().sprite = rodAngry;
 			break;
 		case Emotion.Happy:
-			GameObject.Find ("Rod").GetComponent<SpriteRenderer> ().sprite = rodHappy;
+			GameObject.Find ("RodSprite").GetComponent<SpriteRenderer> ().sprite = rodHappy;
 			break;
 		case Emotion.Neutral:
-			GameObject.Find ("Rod").GetComponent<SpriteRenderer> ().sprite = rodNeutral;
+			GameObject.Find ("RodSprite").GetComponent<SpriteRenderer> ().sprite = rodNeutral;
 			break;
 		case Emotion.Sad:
-			GameObject.Find ("Rod").GetComponent<SpriteRenderer> ().sprite = rodSad;
+			GameObject.Find ("RodSprite").GetComponent<SpriteRenderer> ().sprite = rodSad;
 			break;
 		}
 	}

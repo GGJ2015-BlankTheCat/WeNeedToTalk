@@ -29,7 +29,6 @@ public class Faded : MonoBehaviour {
 	}
 
 	public void Fade() {
-		Debug.Log ("In fade");
 		fade = true;
 	}
 }

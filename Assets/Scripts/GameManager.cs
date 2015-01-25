@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour {
 		compromises = 0;
 
 		rayEmote = GameObject.Find ("RaySprite").GetComponent<RayEmotions>();
-		rayEmote = GameObject.Find ("RaySprite").GetComponent<RayEmotions>();
+		rodEmote = GameObject.Find ("RodSprite").GetComponent<RodEmotions>();
 	}
 	
 	// Update is called once per frame
@@ -90,60 +90,64 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void handleTag(string tag) {
+		Debug.Log (tag);
 		switch (tag) 
 		{
-		case "A_WIN":
+		case "A_Win":
 			compromises++;
 			break;
-		case "E_WIN":
+		case "E_Win":
 			compromises++;
 			break;
-		case "M_WIN":
+		case "M_Win":
 			compromises++;
 			break;
-		case "A_ROD":
+		case "A_Rod":
 			rodWins++;
 			break;
-		case "E_ROD":
+		case "E_Rod":
 			rodWins++;
 			break;
-		case "M_ROD":
+		case "M_Rod":
 			rodWins++;
 			break;
-		case "A_RAY":
+		case "A_Ray":
 			rayWins++;
 			break;
-		case "E_RAY":
+		case "E_Ray":
 			rayWins++;
 			break;
-		case "M_RAY":
+		case "M_Ray":
 			rayWins++;
 			break;
-		case "NAJ":
+		case "Naj":
 			rayEmote.SetEmotion(Emotion.Neutral);
 			break;
-		case "NACH":
+		case "Nach":
 			rodEmote.SetEmotion (Emotion.Neutral);
 			break;
-		case "AAJ":
+		case "Aaj":
 			rayEmote.SetEmotion(Emotion.Angry);
 			break;
-		case "AACH":
+		case "Aach":
 			rodEmote.SetEmotion (Emotion.Angry);
 			break;
-		case "HAJ":
+		case "Haj":
 			rayEmote.SetEmotion(Emotion.Happy);
 			break;
-		case "HACH":
+		case "Hach":
 			rodEmote.SetEmotion (Emotion.Happy);
 			break;
-		case "SAJ":
+		case "Saj":
 			rayEmote.SetEmotion(Emotion.Sad);
 			break;
-		case "SACH":
+		case "Sach":
 			rodEmote.SetEmotion (Emotion.Sad);
 			break;
-
+		case "End":
+			currentState = GameState.Ending;
+			//handleGameOver();
+			break;
 		}
 		return;
 	}

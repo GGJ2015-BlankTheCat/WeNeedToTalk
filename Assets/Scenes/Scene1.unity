@@ -839,6 +839,9 @@ MonoBehaviour:
   layer4: {fileID: 911037107}
   darkLayer: {fileID: 911037106}
   currentState: 0
+  rodWins: 0
+  rayWins: 0
+  compromises: 0
 --- !u!82 &911037105
 AudioSource:
   m_ObjectHideFlags: 0
