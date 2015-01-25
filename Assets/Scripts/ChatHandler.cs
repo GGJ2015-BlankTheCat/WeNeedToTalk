@@ -33,6 +33,8 @@ public class ChatHandler : MonoBehaviour {
 	}
 
 	public void NextTwee(string title){
+		gameManager.GetComponent<GameManager> ().SetState (GameState.Dialogue);
+	
 		currentEntry = tweeEntries [title];
 		CurrentLine = 0;
 
@@ -47,7 +49,6 @@ public class ChatHandler : MonoBehaviour {
 		lastBodyLine = lineCtr - 1;
 
 		notePad.GetComponent<notePadController> ().SetOptions (getOptions (currentEntry.body));
-		gameManager.GetComponent<GameManager> ().SetState (GameState.Dialogue);
 	}
 	
 	public void NextLine() {
@@ -86,5 +87,7 @@ public class ChatHandler : MonoBehaviour {
 		return line.Trim ().IndexOf ("[[") != -1;
 
 	}
+
+
 
 }

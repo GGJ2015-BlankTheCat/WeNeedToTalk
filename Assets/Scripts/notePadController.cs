@@ -8,14 +8,22 @@ public class notePadController : MonoBehaviour {
 
 	string prompt;
 
-	int selected;
+	public int selected;
 
 	GameObject gameManagerObject;
 	GameManager gameManagerScript;
 	
 	GameObject textInterfaceObject;
-	ChatHandler chatHandlerScript;
-	
+//	ChatHandler chatHandlerScript;
+
+	public GameObject notePadObject;
+
+	GameObject pointerObject;
+	RectTransform pointerTransform;
+
+
+	Image notePadImage;
+
 	GameState currentState;
 
 	public Dictionary<string, string> Options;
@@ -23,11 +31,19 @@ public class notePadController : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+
+		notePadImage = GetComponent<Image>();
+
 		gameManagerObject = GameObject.Find ("GameManager");
 		textInterfaceObject = GameObject.Find ("TextInterface");
-		
+
+		notePadObject = GameObject.Find ("NotePad");
+		pointerObject = GameObject.Find ("pointer");
+
+		pointerTransform = pointerObject.GetComponent<RectTransform>();
+
 		gameManagerScript = gameManagerObject.GetComponent<GameManager> ();
-		chatHandlerScript = textInterfaceObject.GetComponent<ChatHandler> ();
+		//chatHandlerScript = textInterfaceObject.GetComponent<ChatHandler> ();
 	
 	}
 	
@@ -42,9 +58,28 @@ public class notePadController : MonoBehaviour {
 			string[] keys = new string[Options.Keys.Count];
 			Options.Keys.CopyTo(keys, 0);
 
-			GUI.SelectionGrid(new Rect(100, 100, 1000, 100), selected, keys, 2);
+			/*foreach(Transform child in transform){
+				
+				child.gameObject.SetActive(true);
+				
+			}*/
+			//notePadImage.enabled = true;
+			notePadObject.transform.localScale= new Vector3(1,1,1);
+			pointerTransform.localScale = new Vector3(1,1,1);
+
+
+			if(keys.Length != 0){
+				createOptions(keys);				
+				renderPointer();
+
+			}
 
 			
+		}
+
+		if (currentState == GameState.Dialogue) {
+			notePadObject.transform.localScale = new Vector3(0,0,0);
+			pointerTransform.localScale = new Vector3(0,0,0);
 		}
 
 	}
@@ -80,5 +115,38 @@ public class notePadController : MonoBehaviour {
 			selected++;
 		}
 	}
+
+	public void createOptions(string[] options){
+
+		int optionIndex = 1;
+
+		foreach (string option in options) {
+
+			GameObject.Find("TextOption" + optionIndex).GetComponent<Text>().text = option;
+
+			optionIndex++;
+
+
+		}
+
+
+	}
+
+	public void renderPointer(){
+
+
+
+		float x = pointerTransform.anchoredPosition.x;
+		float y = GameObject.Find ("TextOption" + (selected + 1)).GetComponent<RectTransform> ().anchoredPosition.y + pointerTransform.sizeDelta.y / 2;
+
+		Debug.Log ("HERE WE ARE: " + y );
+
+
+		pointerTransform.anchoredPosition = new Vector2 (x, y);
+
+	}
+
+
+
 
 }
