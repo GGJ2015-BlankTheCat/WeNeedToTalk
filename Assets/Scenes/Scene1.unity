@@ -495,9 +495,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: 0
   notePadObject: {fileID: 0}
-  blankSprite: {fileID: 0}
-  raySprite: {fileID: 0}
-  rodSprite: {fileID: 0}
 --- !u!114 &461222910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34ff661e18e9404f9899b464f28bf8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tweeSourceAsset: {fileID: 4900000, guid: da772b5dc4bff429db0f68692f03d713, type: 3}
+  tweeSourceAsset: {fileID: 4900000, guid: 3f29cf4fe42554ab0a94e889dd443304, type: 3}
   tweeSource: 
 --- !u!4 &911037103
 Transform:

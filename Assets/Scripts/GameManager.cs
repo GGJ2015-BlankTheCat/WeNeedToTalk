@@ -78,6 +78,8 @@ public class GameManager : MonoBehaviour {
 	private void handleTag(string tag) {
 		switch (tag) 
 		{
+		case "NAJ":
+			break;
 		}
 		return;
 	}
