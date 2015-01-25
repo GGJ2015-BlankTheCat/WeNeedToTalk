@@ -1,6 +1,6 @@
 :: StoryTitle [Title]
 We Need to Talk - A Breakup Game of Super Proportions
-
+[[Start]]
 
 :: Start [audio]
 We Need to Talk
