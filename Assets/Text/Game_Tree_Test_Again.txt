@@ -1,0 +1,555 @@
+﻿:: StoryTitle [Title]
+We Need to Talk - A Breakup Game of Super Proportions
+[[Start]]
+
+:: Start [audio]
+We Need to Talk
+[[Raymond, Rodrigo, why don't we start with you telling me why you're both here?|Ray explains why they're here.]]
+
+
+
+
+:: Synergy [powers Naj Nach]
+Rod: Our powers depend on each other to be effective.  I can absorb energy...
+Ray: ... and I can discharge it.  Seperately, we're not nearly as great as we are together.
+[[I see. Tell me more about your work together.|Ambition two sides]]
+
+
+:: Ambition Rod's side [Risks Saj Nach]
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV]]
+[[I think you make some good points there, but I'd also like to hear what Ray has to say.|Ambition Ray's side now]]
+[[I don't know about that.  It sounds like Ray really wants to advance his career and can't afford to be held back.|Disagree with Rod]]
+
+
+:: Fully endorse Rod's POV [A_Rod Hmph Saj Hach]
+Ray:  Hmph.  Well, if you really think so, I guess I'm just being selfish.  I guess I can be more responsible.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved]]
+
+
+:: EAO 1 [Fine Naj Nach]
+Rod:  Well, sure.  Sometimes I wish I was a bit bolder, but I'm comfortable as myself, and I sure don't wish I was him!
+Ray:  I guess maybe I wish I was industrious sometimes...
+[[So, Ray.  Did you maybe act insensitive about this?|E Rod's Right 1]]
+[[There.  So it seems you're both a little envious of a few things about the other.  That's totally natural.|E WIN 1]]
+
+
+:: E WIN 1 [E_Win Haj Hach]
+Rod:  I guess it is.  I'm sorry if I ever made you feel bad by insisting I didn't want to be like you.
+Ray:  Oh, I'm sorry that I insisted you did.  That was insensitive and egostistical.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Envy resolved 1]]
+
+
+:: Envy Rod's side 1 [Outrage Naj Aach]
+Rod:  My "thoughts" are that Ray is an arogant jerk, and he's making this whole thing up.
+[[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right 1]]
+[[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail 1]]
+[[Rod, I have to agree with you that Ray has been  more than a little insensitive about this.  However, even if you don't want to be him, it's fine to be a little jealous.  I'm sure that Ray is jealous of you sometimes, too.|EAO 1]]
+
+
+:: StoryAuthor [Author]
+Global Game Jamn 2015: "[blank] the Cat"
+
+
+:: Disrespect. [Ugh Aaj Aach]
+Rod: Ugh.
+Ray: Wow, some "professional" you are.
+[[Oh, sorry about that.  Why don't you tell me more about your problems, Ray.|Ray explains the problem.]]
+[[Oh, sorry about that.  Rod, you've been awfully quiet.|Rod is private, disrespect.]]
+
+
+:: Ray explains why they're here. [Just_Isnt_Working Naj Aach] [exit_title]
+Ray:  We’ve been together for a while now, like fifteen years, but we’ve decided we want to break up.  It just isn’t working for us as a romantic relationship.  But we are also in a business partnership that we want to maintain.
+[[Tell me more, Ray.|Ray explains the problem.]]
+[[Rod, you've been awfully quiet.|Rod is private.]]
+[[Boy, golly!  You guys are superheroes! What are your superpowers?|Disrespect.]]
+
+
+:: Ambition [Big_part Naj Nach]
+Ray: Well, this is a big part of why we came here.  We work together prefessionally, and we don't want a messy break-up to interfere with that.
+[[Would it be possible for you to work seperately?|Synergy]]
+[[Tell me more about your work together.|Ambition two sides]]
+
+
+:: Disagree with Rod [Want Naj Sach]
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV]]
+[[Hmm, maybe we should come back to this problem later.|Fail to resolve]]
+
+
+:: Ambition Ray's side now [Want Naj Nach]
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+[[I think you have both made some good points.  Ray, I think you should be more conscientious when Rod tells you to take care.  And Rod, Ray's career is very important to him, and you should be more supportive of that.|Agree with Both]]
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV]]
+
+
+::  Amb resolved [Both_explain Naj Nach]
+Ray:  I still think Rod is too much of a downer in our personal lives.  At home, he gets made if I spend even a little money, and he's so obviously jealous of me.
+Rod:  I repeat, I am not jealous of you!  And your spending really is out of control.
+[[I think we should address your budgeting.|Money 1]]
+[[I think we should address this issue of jealously.|Envy 1]]
+
+
+
+:: Envy 1 [Envy Naj Aach]
+Ray:  Well, Rod will tell you different, but he's envious of me.  I mean, who wouldn't be?  I've got the style, the fans, and my life is just more fun.  Heck, Rod spend the past four Friday nights reading books from the public library!
+Rod:  I do NOT want to be you.  You're so arogant.  How did I stand this for so long?
+[[Alright.  Rod, you seem have some very strong feelings about this.  Ray, I'd like to hear some more of what you'd like to say on this.|Envy Ray's side 1]]
+[[Rod, you clearly feel strongly about this.  Tell me more.|Envy Rod's side 1]]
+
+
+:: Ambition two sides [Glory Naj Nach]
+Ray: In the hero scene it's all about glory.  You want to be on the top, and we've got what it takes to be there.  If only *he* would step up his game and back off mine.
+Rod: Not exactly.  Ray is a loose cannon.  Without me keeping him in check, he'd self-desruct.  I'm worried that one of these days he's gonna get someone hurt.
+[[For the moment, let's focus on Ray's vision for your partnership.|Ambition Ray's side]]
+[[For the moment, let's focus on Rod's concerns about the potential risks in your line of work.|Ambition Rod's side]]
+
+
+:: E Rod's Right 1 [E_Rod Hmph Naj Hach]
+Ray:  Hmm.  Now that I think about it, it is a bit ridiculous.  Rod, I'm sorry.  That was really insensitive of me.
+Rod:  You finally admit it.  I was starting to think I was going crazy.  Thank you for seeing my side.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Envy resolved 1]]
+
+
+:: Envy Fail 1 [E_Fail Outrage Saj Aach End]
+Rod:  I will not stand for this.  What kind of therapist are you anyway?  Ray, our relationship, romantic and otherwise, is through.  Good luck not getting shot.
+
+
+:: Ambition 2
+END NODE
+
+
+::  Envy resolved 1 [Both_explain Naj Nach]
+Ray:  I still think Rod is holding me back professionally, and is too much of a downer in our personal lives.  I need to soar and he's bringing me down, and he gets made if I spend even a little money.
+Rod:  Your spending really is out of control.  And you are simply irresponsable.
+[[I think we should address your professional lives.|Ambition 2]]
+[[I think we should address your budgeting.|Money 2]]
+
+
+
+
+:: Agree with Both [A_Win Agree Haj Hach]
+Ray: I suppose I have been a bit irresponsable.  After all, this isn't about just us, is it?
+Rod:  And I should be more sensitive about what you want and ease up a bit.  Within reason, of course.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved]]
+
+
+:: Ray, what do you think about that? Disrespect. [Pfft Naj Aach]
+Ray: What can I say?  He's a stick-in-the-mud.
+[[What would you say to that, Rod?|Rod is private, disrespect.]]
+
+
+:: Rod is private, disrespect. [Ehhh Naj Aach]
+Rod:  I prefer to keep my private life private.
+[[Ray, what do you think about that?|Ray, what do you think about that? Disrespect.]]
+[[Rod, this is a safe space.  Anything you say here stays here.|Safe space. Disrespect.]]
+[[Well, Rod, you are going to have to open up in order to solve your problem here.|Ray explains the problem.]]
+
+
+
+
+:: Rod is private. [Ehhh Naj Aach]
+Rod:  I prefer to keep my private life private.
+[[Ray, what do you think about that?]]
+[[Rod, this is a safe space.  Anything you say here stays here.|Safe space.]]
+[[Well, Rod, you are going to have to open up in order to solve your problem here.|Ray explains the problem.]]
+
+
+
+
+:: Ray, what do you think about that? [Stick Pfft Naj Aach]
+Ray: What can I say?  He's a stick-in-the-mud.
+[[What would you say to that, Rod?|Rod is private.]]
+
+
+
+:: Disagree with Ray [Risks Saj Nach]
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV]]
+[[Hmm, maybe we should come back to this problem later.|Fail to resolve]]
+
+
+:: Ambition Rod's now [Risks Saj Nach]
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+[[I think you have both made some good points.  Ray, I think you should be more conscientious when Rod tells you to take care.  And Rod, Ray's career is very important to him, and you should be more supportive of that.|Agree with Both]]
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV]]
+
+
+:: EAY 1 [Jerk Aaj Aach]
+Rod:  My "perspective" is that Ray is an arogant jerk, and he's making this whole thing up.
+[[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right 1]]
+[[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail 1]]
+
+
+:: Envy Ray's side 1 [Jealous Haj Aach]
+Ray:  There's not much more to say.  He wants to be me.
+Rod:  I do not!  Why are we even entertaining this?  It is absolutely insensitive and offensive.  I can't deal with this kind of disrespect.
+[[You know Rod, I think you're being defensive about this because you really do want to be Ray.|Envy Fail 1]]
+[[Alright then, Rod.  What's your perspective?|EAY 1]]
+[[I agree with you, Rod.  Ray, I think if you look at this from Rod's point of view, you might find that you are imagining this.|E Rod's Right 1]]
+
+
+:: Safe space. Disrespect. [Sure Naj Aach]
+Rod: Yeah, I know this is *supposed* to be a safe space.
+[[Well, Rod, you are going to have to open up in order to solve your problem.|Ray explains the problem.]]
+[[Alright, can you both explain what the issue is?|Ray explains the problem.]]
+
+
+
+:: Ray explains the problem. [Where_start Naj Aach]
+Ray: Oh, where do I even start?  Rod is always bringing me down!  He holds us both back professionally.  We could be cruising with the big dogs if he wasn't so timid.  He's also a huge cheapskate!  I can't spend a cent without him freaking out.  Honestly, I think he's just jealous of me.
+[[Let's talk more about your professional lives.|Ambition surly]]
+[[Let's talk more about your budgeting.|Money surly]]
+[[Let's talk more about this issue of jealously.|Envy surly]]
+
+
+:: Safe space. [Sure Naj Nach]
+Rod: Yeah, I know this is supposed to be a safe space.
+[[Well, Rod, you are going to have to open up in order to solve your problem.|Both explain problems]]
+[[Alright, can you both explain what the issue is?|Ray explains the problem.]]
+
+
+
+:: Ambition Ray's side [Want Naj Sach]
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV]]
+[[I can certainly see why that might be frustrating.  Rod, what do you think about all of this?|Ambition Rod's now]]
+[[Hmm, I think what Rod said about responsability is right.  You should be more careful, even if it is detrimental to your career.|Disagree with Ray]]
+
+
+:: Fully endorse Ray's POV [A_Ray Sure Haj Sach]
+Rod:  Maybe?  I guess I can cut Ray some slack when it comes to taking risks.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved]]
+
+
+:: Fail to resolve
+This demo is over.  Thanks for playing!
+
+
+:: Money Rod's side [Electrician Saj Nach]
+Rod:  Okay, so I work a day job as an electrician.  Between that and Ray's job as a freelance journalist, we barely pull in enough to pay the bills.  Despite this fact, Ray insists on living beyond his means.  It's not just irresponsable; it's disrepectful since I do a lion's share of the work around the house in addition to earning half of the money.
+[[You know, Ray, I think Rod is right here.  If he really does do all of that work, you should try to be more respectful of his wishes about your budgeting.|MEO]]
+[[It sounds like you have some valid complaints about Ray's behavior.  Ray, would you like to respond?|MAO]]
+[[Honestly I don't think you have any right to decide how Ray spends his money.|MDO]]
+
+
+:: MEO [M_Rod Hmph Saj Hach]
+Ray:  I guess I can cut back on some spending.  Hmph, I will regret to see this pomp' go.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Money resolved]]
+
+
+:: Money Rod's side 1 [Electrician Saj Nach]
+Rod:  Okay, so I work a day job as an electrician.  Between that and Ray's job as a freelance journalist, we barely pull in enough to pay the bills.  Despite this fact, Ray insists on living beyond his means.  It's not just irresponsable; it's disrepectful since I do a lion's share of the work around the house in addition to earning half of the money.
+[[You know, Ray, I think Rod is right here.  If he really does do all of that work, you should try to be more respectful of his wishes about your budgeting.|MEO 1]]
+[[It sounds like you have some valid complaints about Ray's behavior.  Ray, would you like to respond?|MAO 1]]
+[[Honestly I don't think you have any right to decide how Ray spends his money.|MDO 1]]
+
+
+:: MEO 1 [M_Rod Hmph Saj Hach]
+Ray:  I guess I can cut back on some spending.  Hmph, I will regret to see this pomp' go.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Money resolved 1]]
+
+
+:: Money surly
+This demo is over.  Thanks for playing!
+
+
+:: Envy surly
+This demo is over.  Thanks for playing!
+
+
+:: Ambition surly
+This demo is over.  Thanks for playing!
+
+
+:: MDO [Image Naj Sach]
+Ray:  It's a truth a lot of people don't want to accept, but image is important in heroing.  If you don't look the part, people don't trust you, and if people don't trust you, bad things happen.  Rod has his thing going on, and it's not that expensive, but my look takes green to keep up.  And, yeah, I treat myself every once in a while, but it's honestly not that much, and I think I deserve at least that.
+[[The way you put it, it sounds like you have every right to spend the money you're spending.  Rod, I think maybe you've been overreacting.|MEY]]
+[[Hmm, maybe we should come back to this problem later.|M FAIL]]
+
+
+:: MDO 1 [Image Naj Sach]
+Ray:  It's a truth a lot of people don't want to accept, but image is important in heroing.  If you don't look the part, people don't trust you, and if people don't trust you, bad things happen.  Rod has his thing going on, and it's not that expensive, but my look takes green to keep up.  And, yeah, I treat myself every once in a while, but it's honestly not that much, and I think I deserve at least that.
+[[The way you put it, it sounds like you have every right to spend the money you're spending.  Rod, I think maybe you've been overreacting.|MEY 1]]
+[[Hmm, maybe we should come back to this problem later.|M FAIL 1]]
+
+
+:: MAO [Image Naj Sach]
+Ray:  It's a truth a lot of people don't want to accept, but image is important in heroing.  If you don't look the part, people don't trust you, and if people don't trust you, bad things happen.  Rod has his thing going on, and it's not that expensive, but my look takes green to keep up.  And, yeah, I treat myself every once in a while, but it's honestly not that much, and I think I deserve at least that.
+[[The way you put it, it sounds like you have every right to spend the money you're spending.  Rod, I think maybe you've been overreacting.|MEO]]
+[[I think you have both made some good points.  Ray, I think you should be more respectful of Rod's work around your house, and maybe reduce your personal spending.  And Rod, perhaps you should be more accepting of the money that Ray does spend.|M WIN]]
+
+
+:: MAO 1 [Image Naj Sach]
+Ray:  It's a truth a lot of people don't want to accept, but image is important in heroing.  If you don't look the part, people don't trust you, and if people don't trust you, bad things happen.  Rod has his thing going on, and it's not that expensive, but my look takes green to keep up.  And, yeah, I treat myself every once in a while, but it's honestly not that much, and I think I deserve at least that.
+[[The way you put it, it sounds like you have every right to spend the money you're spending.  Rod, I think maybe you've been overreacting.|MEO 1]]
+[[I think you have both made some good points.  Ray, I think you should be more respectful of Rod's work around your house, and maybe reduce your personal spending.  And Rod, perhaps you should be more accepting of the money that Ray does spend.|M WIN 1]]
+
+
+::  Money resolved [Both_explain Naj Nach]
+Ray:  I still think Rod is holding me back professionally.  I need to soar and he's bringing me down, and he's so obviously jealous of me.
+Rod:  I repeat, I am not jealous of you!  And you are simply irresponsable.
+[[I think we should address your professional lives.|Ambition 1]]
+[[I think we should address this issue of jealously.|Envy 1]]
+
+
+
+:: Money 1 [Paid Naj Nach]
+Rod:  Well, money's kind of tight for us.  People don't really think about it, but you don't actually get paid for fighting crime, and it doesn't leave a whole lot of time for better paying jobs.  The thing is, Ray spends like he has all the money in the world!
+Ray:  Hey, wait a minute.  I may spend a bit more than you.  But, one, this look doesn't maintain itself, and two, he only spends so little because he happens to actually like living like the Amish.
+Rod:  What do you mean by that?
+Ray:  You spend more than half of your free time reading books from the public library.
+Rod:  And the other half doing housework because you can't be bothered.
+[[For the moment, let's focus on what Ray wants to spend money on and why.|Money Ray's side 1]]
+[[For the moment, let's focus on Rod's frustrations with Ray's spending and the way housework is divided.|Money Rod's side 1]]
+
+
+:: M WIN 1 [M_Win Haj Hach]
+Ray:  Maybe my spending has been a bit out-of-control...
+Rod:  Although it does seem that some of that spending was important.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Money resolved 1]]
+
+
+::  Money resolved 1 [Both_explain Naj Nach]
+Ray:  I still think Rod is holding me back professionally.  I need to soar and he's bringing me down, and he's so obviously jealous of me.
+Rod:  I repeat, I am not jealous of you!  And you are simply irresponsable.
+[[I think we should address your professional lives.|Ambition 2]]
+[[I think we should address this issue of jealously.|Envy 2]]
+
+
+
+:: Money 2
+END NODE
+
+
+:: M WIN [M_Win Haj Hach]
+Ray:  Maybe my spending has been a bit out-of-control...
+Rod:  Although it does seem that some of that spending was important.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Money resolved]]
+
+
+:: Both explain problems [Both_explain Naj Nach]
+Rod:  Ok, well, I guess I can start then.  For me, I just feel like Ray lives in his own little world.  He doesn't consider the consequences of his actions.
+Ray:  Well, Rod is always bringing me down!  He holds us both back professionally.  We could be cruising with the big dogs if he wasn't so timid.  He's also a huge cheapskate!  I can't spend a cent without him freaking out.  Honestly, I think he's just jealous of me.
+Rod:  I am not jealous of you!  And maybe I woulnd't get so upset about your spending if you helped out a little more around the house.
+[[Let's talk more about your professional lives.|Ambition]]
+[[Let's talk more about your budgeting.|Money]]
+[[Let's talk more about this issue of jealously.|Envy]]
+
+
+
+:: Money [Paid Naj Nach]
+Rod:  Well, money's kind of tight for us.  People don't really think about it, but you don't actually get paid for fighting crime, and it doesn't leave a whole lot of time for better paying jobs.  The thing is, Ray spends like he has all the money in the world!
+Ray:  Hey, wait a minute.  I may spend a bit more than you.  But, one, this look doesn't maintain itself, and two, he only spends so little because he happens to actually like living like the Amish.
+Rod:  What do you mean by that?
+Ray:  You spend more than half of your free time reading books from the public library.
+Rod:  And the other half doing housework because you can't be bothered.
+[[For the moment, let's focus on what Ray wants to spend money on and why.|Money Ray's side]]
+[[For the moment, let's focus on Rod's frustrations with Ray's spending and the way housework is divided.|Money Rod's side]]
+
+
+:: MDY [Electrician Saj Nach]
+Rod:  Okay, so I work a day job as an electrician.  Between that and Ray's job as a freelance journalist, we barely pull in enough to pay the bills.  Despite this fact, Ray insists on living beyond his means.  It's not just irresponsable; it's disrepectful since I do a lion's share of the work around the house in addition to earning half of the money.
+[[You know, Ray, I think Rod is right here.  If he really does do all of that work, you should try to be more respectful of his wishes about your budgeting.|MEO]]
+[[Hmm, maybe we should come back to this problem later.|M FAIL]]
+
+
+:: MDY 1 [Electrician Saj Nach]
+Rod:  Okay, so I work a day job as an electrician.  Between that and Ray's job as a freelance journalist, we barely pull in enough to pay the bills.  Despite this fact, Ray insists on living beyond his means.  It's not just irresponsable; it's disrepectful since I do a lion's share of the work around the house in addition to earning half of the money.
+[[You know, Ray, I think Rod is right here.  If he really does do all of that work, you should try to be more respectful of his wishes about your budgeting.|MEO 1]]
+[[Hmm, maybe we should come back to this problem later.|M FAIL 1]]
+
+
+:: MAY [Electrician Saj Nach]
+Rod:  Okay, so I work a day job as an electrician.  Between that and Ray's job as a freelance journalist, we barely pull in enough to pay the bills.  Despite this fact, Ray insists on living beyond his means.  It's not just irresponsable; it's disrepectful since I do a lion's share of the work around the house in addition to earning half of the money.
+[[You know, Ray, I think Rod is right here.  If he really does do all of that work, you should try to be more respectful of his wishes about your budgeting.|MEY]]
+[[I think you have both made some good points.  Ray, I think you should be more respectful of Rod's work around your house, and maybe reduce your personal spending.  And Rod, perhaps you should be more accepting of the money that Ray does spend.|M WIN]]
+
+
+:: MAY 1 [Electrician Saj Nach]
+Rod:  Okay, so I work a day job as an electrician.  Between that and Ray's job as a freelance journalist, we barely pull in enough to pay the bills.  Despite this fact, Ray insists on living beyond his means.  It's not just irresponsable; it's disrepectful since I do a lion's share of the work around the house in addition to earning half of the money.
+[[You know, Ray, I think Rod is right here.  If he really does do all of that work, you should try to be more respectful of his wishes about your budgeting.|MEY 1]]
+[[I think you have both made some good points.  Ray, I think you should be more respectful of Rod's work around your house, and maybe reduce your personal spending.  And Rod, perhaps you should be more accepting of the money that Ray does spend.|M WIN 1]]
+
+
+:: M FAIL 1
+This demo is over.  Thanks for playing!
+
+
+:: M FAIL
+This demo is over.  Thanks for playing!
+
+
+:: Money Ray's side [Image Naj Sach]
+Ray:  It's a truth a lot of people don't want to accept, but image is important in heroing.  If you don't look the part, people don't trust you, and if people don't trust you, bad things happen.  Rod has his thing going on, and it's not that expensive, but my look takes green to keep up.  And, yeah, I treat myself every once in a while, but it's honestly not that much, and I think I deserve at least that.
+[[The way you put it, it sounds like you have every right to spend the money you're spending.  Rod, I think maybe you've been overreacting.|MEY]]
+[[That seems fair.  Roy, what do you have to say on the matter?|MAY]]
+[[Honestly, it sounds like you might be a bit spoiled.  I think you should cut back on spending.|MDY]]
+
+
+:: MEY [M_Ray Haj Sach]
+Rod:  I suppose it does contribute to his career.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Money resolved]]
+
+
+:: Money Ray's side 1 [Image Naj Sach]
+Ray:  It's a truth a lot of people don't want to accept, but image is important in heroing.  If you don't look the part, people don't trust you, and if people don't trust you, bad things happen.  Rod has his thing going on, and it's not that expensive, but my look takes green to keep up.  And, yeah, I treat myself every once in a while, but it's honestly not that much, and I think I deserve at least that.
+[[The way you put it, it sounds like you have every right to spend the money you're spending.  Rod, I think maybe you've been overreacting.|MEY 1]]
+[[That seems fair.  Roy, what do you have to say on the matter?|MAY 1]]
+[[Honestly, it sounds like you might be a bit spoiled.  I think you should cut back on spending.|MDY 1]]
+
+
+:: MEY 1 [M_Ray Haj Sach]
+Rod:  I suppose it does contribute to his career.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Money resolved 1]]
+
+
+:: Envy Rod's side [Outrage Naj Aach]
+Rod:  My "thoughts" are that Ray is an arogant jerk, and he's making this whole thing up.
+[[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right]]
+[[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail]]
+[[Rod, I have to agree with you that Ray has been  more than a little insensitive about this.  However, even if you don't want to be him, it's fine to be a little jealous.  I'm sure that Ray is jealous of you sometimes, too.|EAO]]
+
+
+:: Synergy 1 [powers Naj Nach]
+Rod: Our powers depend on each other to be effective.  I can absorb energy...
+Ray: ... and I can discharge it.  Seperately, we're not nearly as great as we are together.
+[[I see. Tell me more about your work together.|Ambition two sides 1]]
+
+
+:: Ambition Rod's side 1 [Risks Saj Nach]
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV 1]]
+[[I think you make some good points there, but I'd also like to hear what Ray has to say.|Ambition Ray's side now 1]]
+[[I don't know about that.  It sounds like Ray really wants to advance his career and can't afford to be held back.|Disagree with Rod 1]]
+
+
+:: Fully endorse Rod's POV 1 [A_Rod Hmph Saj Hach]
+Ray:  Hmph.  Well, if you really think so, I guess I'm just being selfish.  I guess I can be more responsible.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved 1]]
+
+
+:: E WIN [E_Win Haj Hach]
+Rod:  I guess it is.  I'm sorry if I ever made you feel bad by insisting I didn't want to be like you.
+Ray:  Oh, I'm sorry that I insisted you did.  That was insensitive and egostistical.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Envy resolved]]
+
+
+:: EAO [Fine Naj Nach]
+Rod:  Well, sure.  Sometimes I wish I was a bit bolder, but I'm comfortable as myself, and I sure don't wish I was him!
+Ray:  I guess maybe I wish I was industrious sometimes...
+[[So, Ray.  Did you maybe act insensitive about this?|E Rod's Right]]
+[[There.  So it seems you're both a little envious of a few things about the other.  That's totally natural.|E WIN]]
+
+
+::  Envy resolved [Both_explain Naj Nach]
+Ray:  I still think Rod is holding me back professionally, and is too much of a downer in our personal lives.  I need to soar and he's bringing me down, and he gets made if I spend even a little money.
+Rod:  Your spending really is out of control.  And you are simply irresponsable.
+[[I think we should address your professional lives.|Ambition 1]]
+[[I think we should address your budgeting.|Money 1]]
+
+
+
+
+:: Ambition 1 [Big_part Naj Nach]
+Ray: Well, this is a big part of why we came here.  We work together prefessionally, and we don't want a messy break-up to interfere with that.
+[[Would it be possible for you to work seperately?|Synergy 1]]
+[[Tell me more about your work together.|Ambition two sides 1]]
+
+
+:: Disagree with Rod 1 [Want Naj Sach]
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV 1]]
+[[Hmm, maybe we should come back to this problem later.|Fail to resolve 1]]
+
+
+:: Ambition Ray's side now 1 [Want Naj Nach]
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+[[I think you have both made some good points.  Ray, I think you should be more conscientious when Rod tells you to take care.  And Rod, Ray's career is very important to him, and you should be more supportive of that.|Agree with Both 1]]
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV 1]]
+
+
+::  Amb resolved 1 [Both_explain Naj Nach]
+Ray:  I still think Rod is too much of a downer in our personal lives.  At home, he gets made if I spend even a little money, and he's so obviously jealous of me.
+Rod:  I repeat, I am not jealous of you!  And your spending really is out of control.
+[[I think we should address your budgeting.|Money 2]]
+[[I think we should address this issue of jealously.|Envy 2]]
+
+
+
+:: Envy 2
+END NODE
+
+
+:: Envy Fail [E_Fail Outrage Saj Aach End]
+Rod:  I will not stand for this.  What kind of therapist are you anyway?  Ray, our relationship, romantic and otherwise, is through.  Good luck not getting shot.
+
+
+:: Ambition two sides 1 [Glory Naj Nach]
+Ray: In the hero scene it's all about glory.  You want to be on the top, and we've got what it takes to be there.  If only *he* would step up his game and back off mine.
+Rod: Not exactly.  Ray is a loose cannon.  Without me keeping him in check, he'd self-desruct.  I'm worried that one of these days he's gonna get someone hurt.
+[[For the moment, let's focus on Ray's vision for your partnership.|Ambition Ray's side 1]]
+[[For the moment, let's focus on Rod's concerns about the potential risks in your line of work.|Ambition Rod's side 1]]
+
+
+:: Envy [Envy Naj Aach]
+Ray:  Well, Rod will tell you different, but he's envious of me.  I mean, who wouldn't be?  I've got the style, the fans, and my life is just more fun.  Heck, Rod spend the past four Friday nights reading books from the public library!
+Rod:  I do NOT want to be you.  You're so arogant.  How did I stand this for so long?
+[[Alright.  Rod, you seem have some very strong feelings about this.  Ray, I'd like to hear some more of what you'd like to say on this.|Envy Ray's side]]
+[[Rod, you clearly feel strongly about this.  Tell me more.|Envy Rod's side]]
+
+
+:: E Rod's Right [E_Rod Hmph Naj Hach]
+Ray:  Hmm.  Now that I think about it, it is a bit ridiculous.  Rod, I'm sorry.  That was really insensitive of me.
+Rod:  You finally admit it.  I was starting to think I was going crazy.  Thank you for seeing my side.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Envy resolved]]
+
+
+:: Agree with Both 1 [A_Win Agree Haj Hach]
+Ray: I suppose I have been a bit irresponsable.  After all, this isn't about just us, is it?
+Rod:  And I should be more sensitive about what you want and ease up a bit.  Within reason, of course.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved]]
+
+
+:: Ambition Rod's now 1 [Risks Saj Nach]
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+[[I think you have both made some good points.  Ray, I think you should be more conscientious when Rod tells you to take care.  And Rod, Ray's career is very important to him, and you should be more supportive of that.|Agree with Both 1]]
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV 1]]
+
+
+:: Disagree with Ray 1 [Risks Saj Nach]
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV 1]]
+[[Hmm, maybe we should come back to this problem later.|Fail to resolve 1]]
+
+
+:: EAY [Jerk Aaj Aach]
+Rod:  My "perspective" is that Ray is an arogant jerk, and he's making this whole thing up.
+[[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right]]
+[[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail]]
+
+
+:: Envy Ray's side [Jealous Haj Aach]
+Ray:  There's not much more to say.  He wants to be me.
+Rod:  I do not!  Why are we even entertaining this?  It is absolutely insensitive and offensive.  I can't deal with this kind of disrespect.
+[[You know Rod, I think you're being defensive about this because you really do want to be Ray.|Envy Fail]]
+[[Alright then, Rod.  What's your perspective?|EAY]]
+[[I agree with you, Rod.  Ray, I think if you look at this from Rod's point of view, you might find that you are imagining this.|E Rod's Right]]
+
+
+:: Ambition Ray's side 1 [Want Naj Sach]
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV 1]]
+[[I can certainly see why that might be frustrating.  Rod, what do you think about all of this?|Ambition Rod's now 1]]
+[[Hmm, I think what Rod said about responsability is right.  You should be more careful, even if it is detrimental to your career.|Disagree with Ray 1]]
+
+
+:: Fully endorse Ray's POV 1 [A_Ray Sure Haj Sach]
+Rod:  Maybe?  I guess I can cut Ray some slack when it comes to taking risks.
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved 1]]
+
+
+:: Fail to resolve 1
+This demo is over.  Thanks for playing!
+
+
