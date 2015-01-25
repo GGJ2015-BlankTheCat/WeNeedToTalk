@@ -78,3 +78,5 @@ public class GameManager : MonoBehaviour {
 }
 
 public enum GameState{Choice, Dialogue, Intro};
+
+public enum Emotion{Angry, Happy, Neutral, Sad}

@@ -134,7 +134,7 @@ GameObject:
   - 4: {fileID: 241201271}
   - 212: {fileID: 241201272}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: RodSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -651,8 +651,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 822129718}
   - 212: {fileID: 822129717}
+  - 114: {fileID: 822129719}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: RaySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,6 +693,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1105963897}
   m_RootOrder: 0
+--- !u!114 &822129719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 822129716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a691f6ec3ad64dfd8971a073337c7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayHappy: {fileID: 21300000, guid: 61be12bd886ca4beaaa53f4f149bb841, type: 3}
+  raySad: {fileID: 21300000, guid: 1a0fe9dbc08ba465f8b6567be9b93c4f, type: 3}
+  rayAngry: {fileID: 21300000, guid: 0826cd2ce6f9248a687f79baa6242e73, type: 3}
+  rayNeutral: {fileID: 21300000, guid: 7a048bac01c8e4c2e985b9dace6e835c, type: 3}
 --- !u!1 &900307409
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +817,7 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .354941189
+    - time: .416565835
       value: 1
       inSlope: -500.200928
       outSlope: -500.200928
@@ -1135,7 +1151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1881197223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 765267182339448cea5c62af36715929, type: 3}
+  m_Script: {fileID: 11500000, guid: d3241d5b2f67944de984a064ebdaefdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
@@ -1159,7 +1175,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 68d2a86eb1a5d4c33a4c5c845df8f6d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1881197226
