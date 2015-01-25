@@ -17,9 +17,10 @@ public class Faded : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (fade) {
-			fadeVal = Mathf.Lerp(1f, 0f, Time.time/5);
-			whatever.color = new Color(whatever.color.r, whatever.color.g, whatever.color.b, fadeVal);
-			Debug.Log ("Color: " + whatever.color.r + " " +  whatever.color.g + " " + whatever.color.b + " " + whatever.color.a); 
+			fadeVal = Mathf.Lerp (fadeVal, 0f, Time.deltaTime);
+			whatever.color = new Color (whatever.color.r, whatever.color.g, whatever.color.b, fadeVal);
+		} else {
+			//Debug.Log ("Oh No.....");
 		}
 		if (fadeVal == 0) 
 		{
@@ -28,6 +29,7 @@ public class Faded : MonoBehaviour {
 	}
 
 	public void Fade() {
+		Debug.Log ("In fade");
 		fade = true;
 	}
 }

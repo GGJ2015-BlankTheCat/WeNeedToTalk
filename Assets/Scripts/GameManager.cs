@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		currentState = GameState.Dialogue;
+		currentState = GameState.Intro;
 		chatHandlerScript = GameObject.Find ("TextInterface");
 		chatHandler = chatHandlerScript.GetComponent<ChatHandler> ();
 		notePad = GameObject.Find ("NotePad");
@@ -24,7 +24,15 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (currentState == GameState.Choice) {
+		if (currentState == GameState.Intro) {
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				titleScreen.GetComponent<Faded> ().Fade ();
+				string selected = notePad.GetComponent<notePadController> ().GetSelected ();
+				chatHandler.NextTwee (selected);
+				currentState = GameState.Dialogue;
+			}
+		}
+		else if (currentState == GameState.Choice) {
 			if (Input.GetKeyDown (KeyCode.UpArrow)) {
 				notePad.GetComponent<notePadController> ().MoveUp();
 				return;
@@ -33,6 +41,7 @@ public class GameManager : MonoBehaviour {
 			} else if (Input.GetKeyDown (KeyCode.Space)) {
 				string selected = notePad.GetComponent<notePadController> ().GetSelected();
 				chatHandler.NextTwee(selected);
+				currentState = GameState.Dialogue;
 			}
 		} else if (currentState == GameState.Dialogue) {
 
@@ -63,13 +72,9 @@ public class GameManager : MonoBehaviour {
 	private void handleTag(string tag) {
 		switch (tag) 
 		{
-			case "exit_title":
-				Debug.Log ("We got it!!!!!!!");
-				titleScreen.GetComponent<Faded>().Fade();
-				break;
 		}
 		return;
 	}
 }
 
-public enum GameState{Choice, Dialogue};
+public enum GameState{Choice, Dialogue, Intro};
