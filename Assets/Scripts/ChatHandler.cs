@@ -50,13 +50,13 @@ public class ChatHandler : MonoBehaviour {
 
 		int lineCtr = 0;
 		foreach (string line in currentEntry.body) {
-			if(line.Trim ().IndexOf ('[') == 0) {
+			if(isOption (line)) {
 				break;
 			}
 			lineCtr++;
 		}
 		//This should return the last line which isn't an option
-		lastBodyLine = lineCtr--;
+		lastBodyLine = lineCtr - 1;
 	}
 	
 	public void NextLine() {
@@ -64,11 +64,41 @@ public class ChatHandler : MonoBehaviour {
 	}
 
 	public bool IsLastLine() {
+		Debug.Log ("CURRENT LINE: " + CurrentLine);
+		Debug.Log ("LAST BODY LINE: " + lastBodyLine);
 		return CurrentLine == lastBodyLine;
 	}
 
 	public string GetCurrentLine(){
 		return currentEntry.body[CurrentLine];	
+	}
+
+
+	public Dictionary<string,string> getOptions(string[] body){
+
+		Dictionary<string, string> options;
+
+		foreach(string line in body){
+			if(isOption(line)){
+				string trimmedLine = line.Trim(new char[] {' ', '[', ']'});
+
+				string[] splitLine = trimmedLine.Split(new string[]{"|"}); 
+
+
+				if(splitLine.Length == 1){
+					options.Add(splitLine[0],splitLine[0]);
+				}else{
+					options.Add(splitLine[0],splitLine[1]);
+				}
+			}
+		}
+
+		return options;
+	}
+
+	public bool isOption(string line){
+		return line.Trim ().IndexOf ("[[") != -1;
+
 	}
 
 }

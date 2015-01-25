@@ -1,12 +1,12 @@
 :: StoryTitle [Title]
 We Need to Talk - A Breakup Game of Super Proportions
-
+[[Game Opening]]
 
 :: Game Opening [audio]
 Dr. Gil:  	Who is my next appointment?
 Receptionist: Raymond and Rodrigo are here to see you.  They want you to know that they have decided to break-up in thier relationship, but want your help in trying to keep thier, um, superhero partnership together.
 
-[[Ray & Rod Introduce Themselves]]
+[[hi pationts|Tell me why you are both here.]]
 
 
 

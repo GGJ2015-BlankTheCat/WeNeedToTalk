@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		currentState = GameState.Dialogue;
-		chatHandlerScript = GameObject.Find ("GameManager");
+		chatHandlerScript = GameObject.Find ("TextInterface");
 		chatHandler = chatHandlerScript.GetComponent<ChatHandler> ();
 	}
 	
@@ -28,11 +28,15 @@ public class GameManager : MonoBehaviour {
 				return;
 			}
 		} else if (currentState == GameState.Dialogue) {
+
 			if (Input.GetKeyDown(KeyCode.Space)) {
-				chatHandler.NextLine();
+			
 				if (chatHandler.IsLastLine()) {
 					currentState = GameState.Choice;
+				}else{
+					chatHandler.NextLine();
 				}
+
 			} else {
 				return;
 			}

@@ -33,7 +33,7 @@ public class TextBoxController : MonoBehaviour {
 	void OnGUI() {
 		if (currentState == GameState.Dialogue) {
 
-			GUI.Label(new Rect(300, 300, 300,300), chatHandlerScript.GetCurrentLine());
+			GUI.Label(new Rect(300, 600, 600,600), chatHandlerScript.GetCurrentLine());
 
 
 			}
