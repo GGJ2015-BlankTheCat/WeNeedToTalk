@@ -79,7 +79,7 @@ public class notePadController : MonoBehaviour {
 			
 		}
 
-		if (currentState == GameState.Dialogue || currentState == GameState.Intro) {
+		if (currentState == GameState.Dialogue || currentState == GameState.Intro || currentState == GameState.Ending) {
 			notePadObject.transform.localScale = new Vector3(0,0,0);
 			pointerTransform.localScale = new Vector3(0,0,0);
 		}

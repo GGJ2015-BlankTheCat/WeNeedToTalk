@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 
 	GameObject notePad;
 	GameObject titleScreen;
+	GameObject endscreen;
 
 	public AudioSource baseLayer;
 	public AudioSource layer2;
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour {
 		chatHandler = chatHandlerScript.GetComponent<ChatHandler> ();
 		notePad = GameObject.Find ("NotePad");
 		titleScreen = GameObject.Find ("TitleScreen");
-
+		endscreen = GameObject.Find("BlackFade");
 
 		rodWins = 0;
 		rayWins = 0;
@@ -49,7 +50,8 @@ public class GameManager : MonoBehaviour {
 				titleScreen.GetComponent<Faded> ().Fade ();
 				string selected = notePad.GetComponent<notePadController> ().GetSelected ();
 				chatHandler.NextTwee (selected);
-				currentState = GameState.Dialogue;
+				if(currentState != GameState.Ending)
+					currentState = GameState.Dialogue;
 			}
 		}
 		else if (currentState == GameState.Choice) {
@@ -61,7 +63,8 @@ public class GameManager : MonoBehaviour {
 			} else if (Input.GetKeyDown (KeyCode.Space)) {
 				string selected = notePad.GetComponent<notePadController> ().GetSelected();
 				chatHandler.NextTwee(selected);
-				currentState = GameState.Dialogue;
+				if(currentState != GameState.Ending)
+					currentState = GameState.Dialogue;
 			}
 		} else if (currentState == GameState.Dialogue) {
 
@@ -102,7 +105,7 @@ public class GameManager : MonoBehaviour {
 
 	private void handleTag(string tag) {
 		Debug.Log (tag);
-		switch (tag) 
+		switch (tag.Trim()) 
 		{
 		case "A_Win":
 			compromises++;
@@ -156,9 +159,10 @@ public class GameManager : MonoBehaviour {
 			rodEmote.SetEmotion (Emotion.Sad);
 			break;
 		case "End":
+			Debug.Log ("grfesgndsfxigjdro");
 			currentState = GameState.Ending;
 			StartDarkAudio();
-			//handleGameOver();
+			endscreen.GetComponent<Faded>().Fade();
 			break;
 		}
 		return;
