@@ -1,5 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
 
 public class TextBoxController : MonoBehaviour {
 
@@ -11,6 +15,9 @@ public class TextBoxController : MonoBehaviour {
 	GameObject textInterfaceObject;
 	ChatHandler chatHandlerScript;
 
+	GameObject chatTextObject;
+
+
 	GameState currentState;
 
 	// Use this for initialization
@@ -20,6 +27,10 @@ public class TextBoxController : MonoBehaviour {
 
 		gameManagerScript = gameManagerObject.GetComponent<GameManager> ();
 		chatHandlerScript = textInterfaceObject.GetComponent<ChatHandler> ();
+
+		chatTextObject = GameObject.Find ("ChatText");
+
+
 	}
 	
 	// Update is called once per frame
@@ -33,8 +44,8 @@ public class TextBoxController : MonoBehaviour {
 	void OnGUI() {
 		if (currentState == GameState.Dialogue) {
 
-			GUI.Label(new Rect(300, 600, 600,600), chatHandlerScript.GetCurrentLine());
-
+			chatTextObject.GetComponent<Text>().text = chatHandlerScript.GetCurrentLine();
+				
 
 			}
 
