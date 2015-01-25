@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour {
 	public AudioSource layer3;
 	public AudioSource layer4;
 	public AudioSource darkLayer;
+	public AudioSource lineStrike;
+	public AudioSource explosion;
+	public AudioSource FWB;
 
 	RayEmotions rayEmote;
 	RodEmotions rodEmote;
@@ -45,6 +48,13 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			Debug.Log("escape pressed");
+			Application.Quit();
+		}
+
+
 		if (currentState == GameState.Intro) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				titleScreen.GetComponent<Faded> ().Fade ();
@@ -61,6 +71,7 @@ public class GameManager : MonoBehaviour {
 			} else if (Input.GetKeyDown (KeyCode.DownArrow)) {
 				notePad.GetComponent<notePadController> ().MoveDown();
 			} else if (Input.GetKeyDown (KeyCode.Space)) {
+				lineStrike.Play();
 				string selected = notePad.GetComponent<notePadController> ().GetSelected();
 				chatHandler.NextTwee(selected);
 				if(currentState != GameState.Ending)
@@ -91,6 +102,7 @@ public class GameManager : MonoBehaviour {
 		if (compromises >= 2 || (rodWins == 1 && rayWins == 1)) {
 			StartLayer4Audio();
 		}
+
 	}
 
 	public void SetState(GameState state) {
@@ -159,7 +171,22 @@ public class GameManager : MonoBehaviour {
 			rodEmote.SetEmotion (Emotion.Sad);
 			break;
 		case "End":
-			Debug.Log ("grfesgndsfxigjdro");
+			if(rodWins + rayWins + compromises < 3){
+				explosion.Play();
+
+			}
+
+			if(compromises == 3 || (rodWins == 1 && rayWins == 1 && compromises == 1)){
+				StopDarkAudio();
+				StopBaseLayerAudio();
+				StopLayer2Audio();
+				StopLayer3Audio();
+				StopLayer4Audio();
+
+				FWB.Play();
+
+			}
+
 			currentState = GameState.Ending;
 			StartDarkAudio();
 			endscreen.GetComponent<Faded>().Fade();
@@ -174,6 +201,10 @@ public class GameManager : MonoBehaviour {
 
 	public void StopDarkAudio() {
 		darkLayer.mute = true;
+	}
+
+	public void StopBaseLayerAudio(){
+		baseLayer.mute = true;
 	}
 
 	public void StartLayer2Audio() {
