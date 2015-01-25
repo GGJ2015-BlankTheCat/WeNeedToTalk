@@ -2,18 +2,12 @@
 
 Needs:
 --> Start Game [Add state]
---->Better fade
----> Better graphics
---->Start State, etc
 --->Initialize Chat Parser better
 --> End Game [Add state]
--> Emotion Changes Triggered
+-> Emotion Changes HHHhhhTriggered
 
 Wants:
 -> Way better UI
----> Better Text Box
----> Update UI art
---->Better BG
-->Flickering next options
 -> Voice Clips
+-> Cutscenes
 -> Music Layering
