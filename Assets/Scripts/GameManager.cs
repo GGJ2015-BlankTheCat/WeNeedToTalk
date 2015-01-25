@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour {
 	GameObject notePad;
 	GameObject titleScreen;
 
+	public AudioSource baseLayer;
+	public AudioSource layer2;
+	public AudioSource layer3;
+	public AudioSource layer4;
+	public AudioSource darkLayer;
 
 	public GameState currentState;
 
@@ -20,6 +25,7 @@ public class GameManager : MonoBehaviour {
 		chatHandler = chatHandlerScript.GetComponent<ChatHandler> ();
 		notePad = GameObject.Find ("NotePad");
 		titleScreen = GameObject.Find ("TitleScreen");
+
 	}
 	
 	// Update is called once per frame
@@ -74,6 +80,38 @@ public class GameManager : MonoBehaviour {
 		{
 		}
 		return;
+	}
+
+	public void StartDarkAudio() {
+		darkLayer.mute = false;
+	}
+
+	public void StopDarkAudio() {
+		darkLayer.mute = true;
+	}
+
+	public void StartLayer2Audio() {
+		layer2.mute = false;
+	}
+
+	public void StopLayer2Audio() {
+		layer2.mute = true;
+	}
+
+	public void StartLayer3Audio() {
+		layer3.mute = false;
+	}
+	
+	public void StopLayer3Audio() {
+		layer3.mute = true;
+	}
+
+	public void StartLayer4Audio() {
+		layer4.mute = false;
+	}
+	
+	public void StopLayer4Audio() {
+		layer4.mute = true;
 	}
 }
 
