@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour {
 	public AudioSource layer4;
 	public AudioSource darkLayer;
 
+	RayEmotions rayEmote;
+	RodEmotions rodEmote;
+
 	public GameState currentState;
 
 	public int rodWins;
@@ -31,10 +34,12 @@ public class GameManager : MonoBehaviour {
 		titleScreen = GameObject.Find ("TitleScreen");
 
 
-
 		rodWins = 0;
 		rayWins = 0;
 		compromises = 0;
+
+		rayEmote = GameObject.Find ("RaySprite").GetComponent<RayEmotions>();
+		rayEmote = GameObject.Find ("RaySprite").GetComponent<RayEmotions>();
 	}
 	
 	// Update is called once per frame
@@ -114,6 +119,30 @@ public class GameManager : MonoBehaviour {
 		case "M_RAY":
 			rayWins++;
 			break;
+		case "NAJ":
+			rayEmote.SetEmotion(Emotion.Neutral);
+			break;
+		case "NACH":
+			rodEmote.SetEmotion (Emotion.Neutral);
+			break;
+		case "AAJ":
+			rayEmote.SetEmotion(Emotion.Angry);
+			break;
+		case "AACH":
+			rodEmote.SetEmotion (Emotion.Angry);
+			break;
+		case "HAJ":
+			rayEmote.SetEmotion(Emotion.Happy);
+			break;
+		case "HACH":
+			rodEmote.SetEmotion (Emotion.Happy);
+			break;
+		case "SAJ":
+			rayEmote.SetEmotion(Emotion.Sad);
+			break;
+		case "SACH":
+			rodEmote.SetEmotion (Emotion.Sad);
+			break;
 
 		}
 		return;
@@ -152,6 +181,6 @@ public class GameManager : MonoBehaviour {
 	}
 }
 
-public enum GameState{Choice, Dialogue, Intro};
+public enum GameState{Choice, Dialogue, Intro, Ending};
 
 public enum Emotion{Angry, Happy, Neutral, Sad}
