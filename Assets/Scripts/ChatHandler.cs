@@ -33,6 +33,7 @@ public class ChatHandler : MonoBehaviour {
 	}
 
 	public void NextTwee(string title){
+		Debug.Log ("title: " + title);
 		currentEntry = tweeEntries [title];
 		CurrentLine = 0;
 

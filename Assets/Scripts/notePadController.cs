@@ -62,7 +62,7 @@ public class notePadController : MonoBehaviour {
 		string[] keys = new string[Options.Keys.Count];
 		Options.Keys.CopyTo(keys, 0);
 
-		return  keys[selected];
+		return  Options[keys[selected]];
 	}
 
 	public void MoveUp() {
