@@ -51,16 +51,12 @@ public class TweeParser : MonoBehaviour {
 				
 
 			string body = currentRawEntry.Substring(firstLineIndex);
-			Debug.Log (body);
-			Debug.Log ("BREAK------------");
+
 			string[] bodyArray = body.Split(new string[]{"\n"}, System.StringSplitOptions.RemoveEmptyEntries);
 
 			currentEntry.body = new string[bodyArray.Length];
 
 			bodyArray.CopyTo(currentEntry.body, 0);
-			for(int i = 0; i < bodyArray.Length; i++) {
-				Debug.Log (bodyArray[i]);
-			}
 
 			entries.Add(currentEntry.title, currentEntry);
 

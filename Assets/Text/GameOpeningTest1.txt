@@ -1,14 +1,46 @@
 :: StoryTitle [Title]
 We Need to Talk - A Breakup Game of Super Proportions
-[[Game Opening]]
-[[Another Option|Game Opening]]
-[[Tell me more, Ray.]]
 
-:: Game Opening [audio]
-Dr. Gil:  	Who is my next appointment?
-Receptionist: Raymond and Rodrigo are here to see you.  They want you to know that they have decided to break-up in thier relationship, but want your help in trying to keep thier, um, superhero partnership together.
 
-[[hi pationts| Tell me why you are both here.]]
+:: Start [audio]
+We Need to Talk
+
+[[Raymond, Rodrigo, why don't we start with you telling me why you're both here?|Ray explains why they're here.]]
+
+
+
+
+:: Synergy
+Rod: Our powers depend on each other to be effective.  I can absorb energy...
+
+Ray: ... and I can discharge it.  Seperately, we're not nearly as great as we are together.
+
+[[I see. Tell me more about your work together.|Ambition two sides]]
+
+
+:: Fully endorse Rod's POV [Ambition Rod]
+Ray:  Hmph.  Well, if you really think so, I guess I'm just being selfish.  I guess I can be more responsible.
+
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved]]
+
+
+:: Ambition Rod's side
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV]]
+[[I think you make some good points there, but I'd also like to hear what Ray has to say.|Ambition Ray's side now]]
+
+[[I don't know about that.  It sounds like Ray really wants to advance his career and can't afford to be held back.|Disagree with Rod]]
+
+
+:: Ambition
+Ray: Well, this is a big part of why we came here.  We work together prefessionally, and we don't want a messy break-up to interfere with that.
+
+[[Would it be possible for you to work seperately?|Synergy]]
+[[Tell me more about your work together.|Ambition two sides]]
+
+
+::  Amb resolved
 
 
 
@@ -16,30 +48,292 @@ Receptionist: Raymond and Rodrigo are here to see you.  They want you to know th
 Global Game Jamn 2015: "[blank] the Cat"
 
 
-:: Tell me why you are both here.
-Therapist:  Tell me why you are both here.
-Ray:  We’ve been together for like 15 years as a couple, and we’ve decided we want to break up.  It just isn’t working for us as a romantic relationship.  But we are also in partnership in business that we want to maintain.  But we don’t see a path for that and need your help.
+:: Disrespect. [disrespect]
+Rod: Ugh.
 
-[[Tell me more, Ray.]]
-[[Rod, you’ve been awfully quiet.]]
-[[OMG! You guys are superheroes! What are your superpowers?]]
+Ray: Wow, some "professional" you are.
 
-
+[[Oh, sorry about that.  Why don't you tell me more about your problems, Ray.|Ray explains the problem.]]
+[[Oh, sorry about that.  Rod, you've been awfully quiet.|Rod is private, disrespect.]]
 
 
+:: Ray explains why they're here.
+Ray:  We’ve been together for a while now, like 15 years, but we’ve decided we want to break up.  It just isn’t working for us as a romantic relationship.  But we are also in a business partnership that we want to maintain.
+
+[[Tell me more, Ray.|Ray explains the problem.]]
+[[Rod, you've been awfully quiet.|Rod is private.]]
+[[Boy, golly!  You guys are superheroes! What are your superpowers?|Disrespect.]]
 
 
-:: Tell me more, Ray.
-Ray:  Rod just won't let me be great.
+:: Disagree with Rod
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV]]
+[[Hmm, maybe we should come back to this problem later.|Fail to resolve]]
+
+
+:: Ambition Ray's side now
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+
+[[I think you have both made some good points.  Ray, I think you should be more conscientious when Rod tells you to take care.  And Rod, Ray's career is very important to him, and you should be more supportive of that.|Agree with Both]]
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV]]
+
+
+:: Ambition two sides
+Ray: In the hero scene it's all about glory.  You want to be on the top, and we've got what it takes to be there.  If only *he* would step up his game and back off mine.
+
+Rod: Not exactly.  Ray is a loose cannon.  Without me keeping him in check, he'd self-desruct.  I'm worried that one of these days he's gonna get someone hurt.
+
+[[For the moment, let's focus on Ray's vision for your partnership.|Ambition Ray's side]]
+[[For the moment, let's focus on Rod's concerns about the potential risks in your line of work.|Ambition Rod's side]]
+
+
+:: Agree with Both [Ambition Win]
+Ray: I suppose I have been a bit irresponsable.  After all, this isn't about just us, is it?
+
+Rod:  And I should be more sensitive about what you want and ease up a bit.  Within reason, of course.
+
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved]]
+
+
+:: Fail to resolve
+
+
+
+:: Ray, what do you think about that? Disrespect.
+Ray: What can I say?  He's a stick-in-the-mud.
+
+[[What would you say to that, Rod?|Rod is private, disrespect.]]
+
+
+
+:: Rod is private, disrespect.
+Rod:  I prefer to keep my private life private.
+
+[[Ray, what do you think about that?|Ray, what do you think about that? Disrespect.]]
+[[Rod, this is a safe space.  Anything you say here stays here.|Safe space. Disrespect.]]
+[[Well, Rod, you are going to have to open up in order to solve your problem here.|Ray explains the problem.]]
 
 
 
 
-:: Rod, you’ve been awfully quiet.
-Rody boy
+:: Ray explains the problem.
+Ray: Oh, where do I even start?  Rod is always bringing me down!  He holds us both back professionally.  We could be cruising with the big dogs if he wasn't so timid.  He's also a huge cheapskate!  I can't spend a cent without him freaking out.  Honestly, I think he's just jealous of me.
+
+[[Let's talk more about your professional lives.|Ambition surly]]
+[[Let's talk more about your budgeting.|Money surly]]
+[[Let's talk more about this issue of jealously.|Envy surly]]
 
 
-:: OMG! You guys are superheroes! What are your superpowers? [disrespect]
-[[Tell me why you are both here.]]
+:: Rod is private.
+Rod:  I prefer to keep my private life private.
+
+[[Ray, what do you think about that?]]
+[[Rod, this is a safe space.  Anything you say here stays here.|Safe space.]]
+[[Well, Rod, you are going to have to open up in order to solve your problem here.|Ray explains the problem.]]
+
+
+
+
+:: Ray, what do you think about that?
+Ray: What can I say?  He's a stick-in-the-mud.
+
+[[What would you say to that, Rod?|Rod is private.]]
+
+
+
+:: Disagree with Ray
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV]]
+[[Hmm, maybe we should come back to this problem later.|Fail to resolve]]
+
+
+:: Ambition Rod's now
+Rod: Well, I already told you about how Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
+
+[[I think you have both made some good points.  Ray, I think you should be more conscientious when Rod tells you to take care.  And Rod, Ray's career is very important to him, and you should be more supportive of that.|Agree with Both]]
+[[I think you're totally right, Rod.  Ray should be more responsable.|Fully endorse Rod's POV]]
+
+
+:: Safe space. Disrespect.
+Rod: Yeah, I know this is *supposed* to be a safe space.
+
+[[Well, Rod, you are going to have to open up in order to solve your problem.|Ray explains the problem.]]
+[[Alright, can you both explain what the issue is?|Ray explains the problem.]]
+
+
+
+:: Safe space.
+Rod: Yeah, I know this is supposed to be a safe space.
+
+[[Well, Rod, you are going to have to open up in order to solve your problem.|Both explain problems]]
+[[Alright, can you both explain what the issue is?|Ray explains the problem.]]
+
+
+
+:: Ambition Ray's side
+Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look up to.  And our work is a way for me to achieve that.  But Rod is just so restrictive!  He won't let me be the best that I can be.  I want him to give me a little leeway every once in a while.
+
+[[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV]]
+[[I can certainly see why that might be frustrating.  Rod, what do you think about all of this?|Ambition Rod's now]]
+[[Hmm, I think what Rod said about responsability is right.  You should be more careful, even if it is detrimental to your career.|Disagree with Ray]]
+
+
+:: Fully endorse Ray's POV [Ambition Ray]
+Rod:  Maybe?  I guess I can cut Ray some slack when it comes to taking risks.
+
+[[Great!  I think we're making some progress here.  Now what else would you like to talk about| Amb resolved]]
+
+
+:: MAO
+[[MEO]]
+[[M Ray's side 2]]
+
+
+:: MEO
+
+
+
+:: Ambition surly
+
+
+
+:: Money surly
+
+
+
+:: Envy surly
+
+
+
+:: Money Rod's side
+[[MAO]]
+[[MDO]]
+
+
+:: MDO
+[[MEA]]
+[[M FAIL]]
+
+
+:: M Ray's side 2
+[[MEO]]
+[[M WIN]]
+
+
+:: Both explain problems [!surly]
+Rod:  Ok, well, I guess I can start then.  For me, I just feel like Ray lives in his own little world.  He doesn't consider the consequences of his actions.
+
+Ray:  Well, Rod is always bringing me down!  He holds us both back professionally.  We could be cruising with the big dogs if he wasn't so timid.  He's also a huge cheapskate!  I can't spend a cent without him freaking out.  Honestly, I think he's just jealous of me.
+
+Rod:  I am not jealous of you!  And maybe I woulnd't get so upset about your spending if you helped out a little more around the house.
+
+[[Let's talk more about your professional lives.|Ambition]]
+[[Let's talk more about your budgeting.|Money]]
+[[Let's talk more about this issue of jealously.|Envy]]
+
+
+
+:: Money
+Rod:  Well, money's kind of tight for us.  People don't really think about it, but you don't actually get paid for fighting crime, and it doesn't leave a whole lot of time for better paying jobs.  The thing is, Ray spends like he has all the money in the world!
+
+Ray:  Hey, wait a minute.  I may spend a bit more than you.  But, one, this look doesn't maintain itself, and two, he only spends so little because he happens to actually like living like the Amish.
+
+[[|Money Ray's side]]
+[[|Money Rod's side]]
+
+
+:: M FAIL
+
+
+
+:: M WIN
+
+
+
+:: Money Ray's side
+[[MAY]]
+[[MDY]]
+
+
+:: MDY
+[[MEO]]
+[[M FAIL]]
+
+
+:: M Rod's side 2
+[[MEA]]
+[[M WIN]]
+
+
+:: MAY
+[[MEY]]
+[[M Rod's side 2]]
+
+
+:: MEY
+
+
+
+:: EEO
+
+
+
+:: EAO
+[[EEO]]
+[[E Ray's side 2]]
+
+
+:: EDO
+[[EEY]]
+[[E FAIL]]
+
+
+:: Envy Rod's side
+[[EAO]]
+[[EDO]]
+
+
+:: E Ray's side 2
+[[EEO]]
+[[E WIN]]
+
+
+:: E FAIL
+
+
+
+:: E WIN
+
+
+
+:: Envy
+[[Envy Ray's side]]
+[[Envy Rod's side]]
+
+
+:: Envy Ray's side
+[[EAY]]
+[[EDY]]
+
+
+:: EDY
+[[EEO]]
+[[E FAIL]]
+
+
+:: E Rod's side 2
+[[EEY]]
+[[E WIN]]
+
+
+:: EAY
+[[EEY]]
+[[E Rod's side 2]]
+
+
+:: EEY
+
 
 

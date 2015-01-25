@@ -26,19 +26,7 @@ public class ChatHandler : MonoBehaviour {
 
 		CurrentLine = 0;
 
-		foreach (string key in tweeEntries.Keys) {
-
-			Debug.Log("THE KEY IS:" + key.Trim ());
-
-			Debug.Log(key.Trim () == "StoryTitle");
-		}
-
 		//TODO: REAL INITIALIZE
-		/*currentEntry = new tweeEntry ();
-		currentEntry.title = "";
-		currentEntry.body = new string[1];
-		currentEntry.tags = new string[1];	
-		*/
 		NextTwee("StoryTitle");
 		
 
@@ -67,8 +55,6 @@ public class ChatHandler : MonoBehaviour {
 	}
 
 	public bool IsLastLine() {
-		Debug.Log ("CURRENT LINE: " + CurrentLine);
-		Debug.Log ("LAST BODY LINE: " + lastBodyLine);
 		return CurrentLine == lastBodyLine;
 	}
 
@@ -83,14 +69,15 @@ public class ChatHandler : MonoBehaviour {
 
 		foreach(string line in body){
 			if(isOption(line)){
-				string trimmedLine = line.Trim(new char[] {' ', '[', ']'});
-
+				string trimmedLine = line.Trim(new char[] {' ', '[', ']'}).Replace("]]", string.Empty);
+				Debug.Log ("line: " + line);
+				Debug.Log ("trimmedLine: " + trimmedLine);
 				string[] splitLine = trimmedLine.Split(new char[]{'|'}); 
-
-
-				if(splitLine.Length == 1){
+				if(splitLine.Length == 1) {
+					Debug.Log ("1 Element is : " + splitLine[0]);
 					options.Add(splitLine[0],splitLine[0]);
-				}else{
+				} else {
+					Debug.Log ("2 elements is: " + splitLine[0] + "/" + splitLine[1]);
 					options.Add(splitLine[0],splitLine[1]);
 				}
 			}

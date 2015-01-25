@@ -33,13 +33,7 @@ public class notePadController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		currentState = gameManagerScript.currentState;
-	
-
-		if (currentState == GameState.Choice) {
-			Debug.Log("HEY ITS IN CHOICE MODE OK");
-		}
+		currentState = gameManagerScript.currentState;	
 	}
 
 
@@ -47,9 +41,6 @@ public class notePadController : MonoBehaviour {
 		if (currentState == GameState.Choice) {
 			string[] keys = new string[Options.Keys.Count];
 			Options.Keys.CopyTo(keys, 0);
-			foreach(string key in keys) {
-				Debug.Log ("key: " + key);
-			}
 
 			GUI.SelectionGrid(new Rect(100, 100, 1000, 100), selected, keys, 2);
 
