@@ -33,7 +33,6 @@ public class ChatHandler : MonoBehaviour {
 	}
 
 	public void NextTwee(string title){
-		Debug.Log ("title: " + title);
 		currentEntry = tweeEntries [title];
 		CurrentLine = 0;
 
@@ -71,15 +70,11 @@ public class ChatHandler : MonoBehaviour {
 		foreach(string line in body){
 			if(isOption(line)){
 				string trimmedLine = line.Trim(new char[] {' ', '[', ']'}).Replace("]]", string.Empty);
-				Debug.Log ("line: " + line);
-				Debug.Log ("trimmedLine: " + trimmedLine);
 				string[] splitLine = trimmedLine.Split(new char[]{'|'}); 
 				if(splitLine.Length == 1) {
-					Debug.Log ("1 Element is : " + splitLine[0]);
-					options.Add(splitLine[0],splitLine[0]);
+					options.Add(splitLine[0].Trim(),splitLine[0].Trim ());
 				} else {
-					Debug.Log ("2 elements is: " + splitLine[0] + "/" + splitLine[1]);
-					options.Add(splitLine[0],splitLine[1]);
+					options.Add(splitLine[0].Trim(),splitLine[1].Trim ());
 				}
 			}
 		}
