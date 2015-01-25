@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour {
 		chatHandlerScript = GameObject.Find ("TextInterface");
 		chatHandler = chatHandlerScript.GetComponent<ChatHandler> ();
 		notePad = GameObject.Find ("NotePad");
-
 	}
 	
 	// Update is called once per frame
@@ -51,6 +50,17 @@ public class GameManager : MonoBehaviour {
 
 	public void SetState(GameState state) {
 		currentState = state;
+	}
+
+	public void HandleTags(string[] tags) {
+		foreach (string tag in tags) {
+			handleTag (tag);
+		}
+	}
+
+	private void handleTag(string tag) {
+		//whatever;
+		return;
 	}
 }
 

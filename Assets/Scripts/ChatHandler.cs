@@ -46,8 +46,11 @@ public class ChatHandler : MonoBehaviour {
 		//This should return the last line which isn't an option
 		lastBodyLine = lineCtr - 1;
 
+		//notePad.GetComponent<notePadController> ().SetPrompt (GetCurrentLine());
 		notePad.GetComponent<notePadController> ().SetOptions (getOptions (currentEntry.body));
 		gameManager.GetComponent<GameManager> ().SetState (GameState.Dialogue);
+
+		gameManager.GetComponent<GameManager> ().HandleTags (currentEntry.tags);
 	}
 	
 	public void NextLine() {
