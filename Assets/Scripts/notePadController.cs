@@ -56,7 +56,7 @@ public class notePadController : MonoBehaviour {
 
 
 	void OnGUI(){
-		if (currentState == GameState.Choice) {
+		if (currentState != GameState.Dialogue && currentState != GameState.Ending) {
 			string[] keys = new string[Options.Keys.Count];
 			Options.Keys.CopyTo(keys, 0);
 

@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour {
 
 	public GameState currentState;
 
+	public int rodWins;
+	public int rayWins;
+	public int compromises;
+
 
 	// Use this for initialization
 	void Awake () {
@@ -26,6 +30,11 @@ public class GameManager : MonoBehaviour {
 		notePad = GameObject.Find ("NotePad");
 		titleScreen = GameObject.Find ("TitleScreen");
 
+
+
+		rodWins = 0;
+		rayWins = 0;
+		compromises = 0;
 	}
 	
 	// Update is called once per frame
@@ -78,8 +87,34 @@ public class GameManager : MonoBehaviour {
 	private void handleTag(string tag) {
 		switch (tag) 
 		{
-		case "NAJ":
+		case "A_WIN":
+			compromises++;
 			break;
+		case "E_WIN":
+			compromises++;
+			break;
+		case "M_WIN":
+			compromises++;
+			break;
+		case "A_ROD":
+			rodWins++;
+			break;
+		case "E_ROD":
+			rodWins++;
+			break;
+		case "M_ROD":
+			rodWins++;
+			break;
+		case "A_RAY":
+			rayWins++;
+			break;
+		case "E_RAY":
+			rayWins++;
+			break;
+		case "M_RAY":
+			rayWins++;
+			break;
+
 		}
 		return;
 	}
@@ -117,6 +152,6 @@ public class GameManager : MonoBehaviour {
 	}
 }
 
-public enum GameState{Choice, Dialogue, Intro, Ending};
+public enum GameState{Choice, Dialogue, Intro};
 
 public enum Emotion{Angry, Happy, Neutral, Sad}
