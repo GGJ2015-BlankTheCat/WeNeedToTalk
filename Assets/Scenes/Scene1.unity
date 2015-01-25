@@ -339,11 +339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06f7b5158c433240aa799522780abb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTexture: {fileID: 2800000, guid: 6159a8d54f232be41938402bf9437a83, type: 3}
-  fadeSpeed: .100000001
-  drawDepth: -1000
-  gameManagerObject: {fileID: 0}
-  gameManagerScript: {fileID: 0}
 --- !u!1 &448820978
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +387,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3523b324eb3f04444850ea73031e0cf6, type: 3}
     m_FontSize: 8
     m_FontStyle: 0
     m_BestFit: 0
@@ -630,7 +625,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3523b324eb3f04444850ea73031e0cf6, type: 3}
     m_FontSize: 8
     m_FontStyle: 0
     m_BestFit: 0
@@ -1205,6 +1200,10 @@ Prefab:
       propertyPath: m_Text
       value: czvfzvfdzvfdzvfdsvfdvdfvfd
       objectReference: {fileID: 0}
+    - target: {fileID: 11496962, guid: 47530c02c69888d40a6dcab220ae8f97, type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47530c02c69888d40a6dcab220ae8f97, type: 2}
   m_RootGameObject: {fileID: 21079120}
@@ -1246,7 +1245,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0c679f447278224f8fec9e1b6076c64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0ddb11e84ab64d40be1f36cd12a4600, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1563017937
 Transform:
@@ -1548,7 +1547,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 3523b324eb3f04444850ea73031e0cf6, type: 3}
     m_FontSize: 8
     m_FontStyle: 0
     m_BestFit: 0
@@ -1633,7 +1632,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 68d2a86eb1a5d4c33a4c5c845df8f6d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: acf0d975d94574a4d8545e91b3226b8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1881197226
 Transform:
@@ -1642,7 +1641,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1881197223}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .319999993, y: -.620000005, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
