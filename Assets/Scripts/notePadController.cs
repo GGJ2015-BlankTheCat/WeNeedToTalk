@@ -29,6 +29,11 @@ public class notePadController : MonoBehaviour {
 	public Dictionary<string, string> Options;
 
 
+	public Sprite blankSprite;
+	public Sprite raySprite;
+	public Sprite rodSprite;
+
+
 	// Use this for initialization
 	void Awake () {
 
@@ -127,6 +132,14 @@ public class notePadController : MonoBehaviour {
 
 			optionIndex++;
 
+
+		}
+
+
+		while (optionIndex < 4) {
+
+			GameObject.Find("TextOption" + optionIndex).GetComponent<Text>().text = "";
+			optionIndex++;
 
 		}
 
