@@ -59,7 +59,7 @@ public class notePadController : MonoBehaviour {
 
 
 	void OnGUI(){
-		if (currentState == GameState.Choice) {
+		if (currentState == GameState.Choice || currentState == GameState.Intro) {
 			string[] keys = new string[Options.Keys.Count];
 			Options.Keys.CopyTo(keys, 0);
 
@@ -152,9 +152,6 @@ public class notePadController : MonoBehaviour {
 
 		float x = pointerTransform.anchoredPosition.x;
 		float y = GameObject.Find ("TextOption" + (selected + 1)).GetComponent<RectTransform> ().anchoredPosition.y + pointerTransform.sizeDelta.y / 2;
-
-		Debug.Log ("HERE WE ARE: " + y );
-
 
 		pointerTransform.anchoredPosition = new Vector2 (x, y);
 

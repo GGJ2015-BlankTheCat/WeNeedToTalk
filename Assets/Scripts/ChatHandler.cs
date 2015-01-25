@@ -26,15 +26,10 @@ public class ChatHandler : MonoBehaviour {
 
 		CurrentLine = 0;
 
-		//TODO: REAL INITIALIZE
-		NextTwee("StoryTitle");
-		
-
+		NextTwee ("Start");
 	}
 
-	public void NextTwee(string title){
-		gameManager.GetComponent<GameManager> ().SetState (GameState.Dialogue);
-	
+	public void NextTwee(string title){	
 		currentEntry = tweeEntries [title];
 		CurrentLine = 0;
 
