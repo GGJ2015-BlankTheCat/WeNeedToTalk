@@ -77,6 +77,17 @@ public class GameManager : MonoBehaviour {
 				return;
 			}
 		}
+		if (rayWins > rodWins || rodWins > rayWins) {
+			StartDarkAudio ();
+		} else {
+			StopDarkAudio ();
+		}
+		if (compromises >= 1) {
+			StartLayer3Audio ();
+		}
+		if (compromises >= 2 || (rodWins == 1 && rayWins == 1)) {
+			StartLayer4Audio();
+		}
 	}
 
 	public void SetState(GameState state) {
