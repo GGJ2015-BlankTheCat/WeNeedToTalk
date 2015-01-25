@@ -78,9 +78,9 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 		if (rayWins > rodWins || rodWins > rayWins) {
-			StartDarkAudio ();
+			StopLayer2Audio ();
 		} else {
-			StopDarkAudio ();
+			StartLayer2Audio ();
 		}
 		if (compromises >= 1) {
 			StartLayer3Audio ();
@@ -157,6 +157,7 @@ public class GameManager : MonoBehaviour {
 			break;
 		case "End":
 			currentState = GameState.Ending;
+			StartDarkAudio();
 			//handleGameOver();
 			break;
 		}
