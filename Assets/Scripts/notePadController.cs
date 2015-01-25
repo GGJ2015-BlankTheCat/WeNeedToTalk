@@ -56,7 +56,7 @@ public class notePadController : MonoBehaviour {
 
 
 	void OnGUI(){
-		if (currentState != GameState.Dialogue && currentState != GameState.Ending) {
+		if (currentState == GameState.Choice) {
 			string[] keys = new string[Options.Keys.Count];
 			Options.Keys.CopyTo(keys, 0);
 
@@ -79,7 +79,7 @@ public class notePadController : MonoBehaviour {
 			
 		}
 
-		if (currentState == GameState.Dialogue) {
+		if (currentState == GameState.Dialogue || currentState == GameState.Intro) {
 			notePadObject.transform.localScale = new Vector3(0,0,0);
 			pointerTransform.localScale = new Vector3(0,0,0);
 		}
