@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour {
 	public AudioSource layer4;
 	public AudioSource darkLayer;
 
+	RayEmotions rayEmote;
+	RodEmotions rodEmote;
+
 	public GameState currentState;
 
 
@@ -25,7 +28,8 @@ public class GameManager : MonoBehaviour {
 		chatHandler = chatHandlerScript.GetComponent<ChatHandler> ();
 		notePad = GameObject.Find ("NotePad");
 		titleScreen = GameObject.Find ("TitleScreen");
-
+		rayEmote = GameObject.Find ("RaySprite").GetComponent<RayEmotions>();
+		rayEmote = GameObject.Find ("RaySprite").GetComponent<RayEmotions>();
 	}
 	
 	// Update is called once per frame
@@ -79,7 +83,30 @@ public class GameManager : MonoBehaviour {
 		switch (tag) 
 		{
 		case "NAJ":
+			rayEmote.SetEmotion(Emotion.Neutral);
 			break;
+		case "NACH":
+			rodEmote.SetEmotion (Emotion.Neutral);
+			break;
+		case "AAJ":
+			rayEmote.SetEmotion(Emotion.Angry);
+			break;
+		case "AACH":
+			rodEmote.SetEmotion (Emotion.Angry);
+			break;
+		case "HAJ":
+			rayEmote.SetEmotion(Emotion.Happy);
+			break;
+		case "HACH":
+			rodEmote.SetEmotion (Emotion.Happy);
+			break;
+		case "SAJ":
+			rayEmote.SetEmotion(Emotion.Sad);
+			break;
+		case "SACH":
+			rodEmote.SetEmotion (Emotion.Sad);
+			break;
+
 		}
 		return;
 	}
