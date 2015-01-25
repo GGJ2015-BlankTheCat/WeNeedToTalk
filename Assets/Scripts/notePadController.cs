@@ -91,6 +91,7 @@ public class notePadController : MonoBehaviour {
 
 	public void SetOptions(Dictionary<string,string> input) {
 		Options = new Dictionary<string, string>(input);
+		selected = 0;
 	}
 
 	public string GetSelected() {

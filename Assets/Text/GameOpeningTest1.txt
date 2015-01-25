@@ -57,7 +57,7 @@ Ray: Wow, some "professional" you are.
 [[Oh, sorry about that.  Rod, you've been awfully quiet.|Rod is private, disrespect.]]
 
 
-:: Ray explains why they're here.
+:: Ray explains why they're here. [exit_title]
 Ray:  We’ve been together for a while now, like 15 years, but we’ve decided we want to break up.  It just isn’t working for us as a romantic relationship.  But we are also in a business partnership that we want to maintain.
 
 [[Tell me more, Ray.|Ray explains the problem.]]
