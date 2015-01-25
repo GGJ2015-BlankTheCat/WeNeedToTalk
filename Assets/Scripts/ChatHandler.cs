@@ -22,7 +22,7 @@ public class ChatHandler : MonoBehaviour {
 		gameManager = GameObject.Find ("GameManager");
 		tweeEntries = gameManager.GetComponent<TweeParser> ().entries;
 		textBox = GameObject.Find ("TextBox");
-		notePad = GameObject.Find ("Note Pad");
+		notePad = GameObject.Find ("NotePad");
 
 		CurrentLine = 0;
 
@@ -44,7 +44,7 @@ public class ChatHandler : MonoBehaviour {
 
 	}
 
-	void NextTwee(string title){
+	public void NextTwee(string title){
 		currentEntry = tweeEntries [title];
 		CurrentLine = 0;
 
@@ -57,6 +57,9 @@ public class ChatHandler : MonoBehaviour {
 		}
 		//This should return the last line which isn't an option
 		lastBodyLine = lineCtr - 1;
+
+		notePad.GetComponent<notePadController> ().SetOptions (getOptions (currentEntry.body));
+		gameManager.GetComponent<GameManager> ().SetState (GameState.Dialogue);
 	}
 	
 	public void NextLine() {
@@ -76,13 +79,13 @@ public class ChatHandler : MonoBehaviour {
 
 	public Dictionary<string,string> getOptions(string[] body){
 
-		Dictionary<string, string> options;
+		Dictionary<string, string> options = new Dictionary<string, string>();
 
 		foreach(string line in body){
 			if(isOption(line)){
 				string trimmedLine = line.Trim(new char[] {' ', '[', ']'});
 
-				string[] splitLine = trimmedLine.Split(new string[]{"|"}); 
+				string[] splitLine = trimmedLine.Split(new char[]{'|'}); 
 
 
 				if(splitLine.Length == 1){

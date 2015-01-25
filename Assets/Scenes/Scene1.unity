@@ -297,12 +297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469cf00d6311d5e4a837e1ee2c1eb804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selGridInt: 0
-  selStrings:
-  - Grid 1
-  - Grid 2
-  - Grid 3
-  - Grid 4
 --- !u!1 &670265953
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using System.Text;
 
 public class notePadController : MonoBehaviour {
 
 	string prompt;
-	string[] choices;
 
 	int selected;
 
@@ -16,9 +18,7 @@ public class notePadController : MonoBehaviour {
 	
 	GameState currentState;
 
-
-	public int selGridInt = 0;
-	public string[] selStrings = new string[] {"Grid 1", "Grid 2", "Grid 3", "Grid 4"};
+	public Dictionary<string, string> Options;
 
 
 	// Use this for initialization
@@ -45,9 +45,13 @@ public class notePadController : MonoBehaviour {
 
 	void OnGUI(){
 		if (currentState == GameState.Choice) {
-			Debug.Log("HEELO WE ARE IN OPTIONS PLACE OOOKK");
-			//GUI.Label(new Rect(300, 600, 300,300), "OPTIONS");
-			selGridInt = GUI.SelectionGrid(new Rect(25, 25, 100, 30), selGridInt, selStrings, 2);
+			string[] keys = new string[Options.Keys.Count];
+			Options.Keys.CopyTo(keys, 0);
+			foreach(string key in keys) {
+				Debug.Log ("key: " + key);
+			}
+
+			GUI.SelectionGrid(new Rect(100, 100, 1000, 100), selected, keys, 2);
 
 			
 		}
@@ -59,24 +63,27 @@ public class notePadController : MonoBehaviour {
 		prompt = line;
 	}
 
-	public void SetOptions(string[] lines) {
-		choices = lines;
+	public void SetOptions(Dictionary<string,string> input) {
+		Options = new Dictionary<string, string>(input);
 	}
 
 	public string GetSelected() {
-		return choices [selected];
+		string[] keys = new string[Options.Keys.Count];
+		Options.Keys.CopyTo(keys, 0);
+
+		return  keys[selected];
 	}
 
 	public void MoveUp() {
 		if (selected == 0) {
-			selected = choices.Length - 1;
+			selected = Options.Keys.Count - 1;
 		} else {
 			selected--;
 		}
 	}
 
 	public void MoveDown() {
-		if (selected == choices.Length - 1) {
+		if (selected == Options.Keys.Count - 1) {
 			selected = 0;
 		} else {
 			selected++;
