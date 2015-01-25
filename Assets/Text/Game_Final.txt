@@ -67,7 +67,7 @@ Rod:  You finally admit it.  I was starting to think I was going crazy.  Thank y
 [[Great!  I think we're making some progress here.  Now what else would you like to talk about?|Money unresolved]]
 
 
-:: Envy Fail 1 [E_Fail Outrage Saj Aach End]
+:: Envy Fail 1 [E_Fail Outrage2 Saj Aach End]
 Rod:  I will not stand for this.  What kind of therapist are you anyway?  Ray, our relationship, romantic and otherwise, is through.  Good luck not getting shot.
 
 
@@ -118,7 +118,8 @@ Ray:  Oh, I'm sorry that I insisted you did.  That was insensitive and egostisti
 
 
 :: Synergy [powers Naj Nach]
-Rod: Our powers depend on each other to be effective.  I can absorb energy...
+Ray: Our powers depend on each other to be effective.
+Rod:  I can absorb energy...
 Ray: ... and I can discharge it.  Seperately, we're not nearly as great as we are together.
 [[I see. Tell me more about your work together.|Ambition two sides]]
 
@@ -135,11 +136,11 @@ Ray:  Hmph.  Well, if you really think so, I guess I'm just being selfish.  I gu
 [[Great!  I think we're making some progress here.  Now what else would you like to talk about?| Amb resolved]]
 
 
-:: Envy Fail 3 [E_Fail Outrage Saj Aach End]
+:: Envy Fail 3 [E_Fail Outrage2 Saj Aach End]
 Rod:  I will not stand for this.  What kind of therapist are you anyway?  Ray, our relationship, romantic and otherwise, is through.  Good luck not getting shot.
 
 
-:: EAY 1 [Jerk Aaj Aach]
+:: EAY 1 [Outrage Aaj Aach]
 Rod:  My "perspective" is that Ray is an arogant jerk, and he's making this whole thing up.
 [[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right 1]]
 [[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail 1]]
@@ -238,7 +239,7 @@ Ray:  I guess I can cut back on some spending.  Hmph, I will regret to see this 
 [[Great!  I think we're making some progress here.  Now what else would you like to talk about?| Envy unresolved]]
 
 
-:: EAY 3 [Jerk Aaj Aach]
+:: EAY 3 [Outrage Aaj Aach]
 Rod:  My "perspective" is that Ray is an arogant jerk, and he's making this whole thing up.
 [[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right 3]]
 [[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail 3]]
@@ -355,6 +356,12 @@ Ray: Our powers depend on each other to be effective.  He can absorb energy and 
 [[I see. Tell me more about your work together.|Ambition two sides 4]]
 
 
+:: Easter Egg [Haj Hach]
+Ray and Rod are the "mild mannered" alter egos of the super-hero duo Ajax and Achilies.  They first met as teenagers as members of a juior crime-fighting team called the C-Listers, all of whom had inconvinient or hard-to-use superpowers.  Rod and Ray found, however, that they could use their powers in tandem to great effect, and a great partnership (and later *partnership*) was formed.
+
+[[What is this?  I didn't ask for exposition.  Can we get back to the game?  I feel like I was doing well.|Ambition two sides 1]]
+
+
 :: Ambition two sides 4 [Glory Naj Aach]
 Ray: In the hero scene it's all about glory.  You want to be on the top, and we've got what it takes to be there.  If only *he* would step up his game and back off mine.
 Rod: Not exactly.
@@ -363,9 +370,11 @@ Rod: Not exactly.
 
 
 :: Synergy 1 [powers Naj Nach]
-Rod: Our powers depend on each other to be effective.  I can absorb energy...
+Ray: Our powers depend on each other to be effective.
+Rod:  I can absorb energy...
 Ray: ... and I can discharge it.  Seperately, we're not nearly as great as we are together.
 [[I see. Tell me more about your work together.|Ambition two sides 1]]
+[[Tell me about your heroic identities.  (Click this; it's an easter egg.|Easter Egg]]
 
 
 :: Ambition Rod's side 1 [Risks Saj Nach]
@@ -398,7 +407,7 @@ Ray:  Ever since I was little, I've wanted to be a leader.  Someone people look 
 [[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV 1]]
 
 
-:: Ambition Rod's side 4 [Risks Saj Aach]
+:: Ambition Rod's side 4 [Grumble Saj Aach]
 Rod: ...
 [[Rod, you're going to have to speak up.|Fully endorse Rod's POV 4]]
 [[Alright, Rod.  We can come back to you.  Ray, what do you think.|Ambition Ray's side 4]]
@@ -436,13 +445,13 @@ Rod: Well, I already told you about how Ray takes too many risks.  When we start
 [[Hmm, I don't really think that either of your complaints matter.|FAIL]]
 
 
-:: Fully endorse Ray's POV 4 [A_Ray Sure Naj Aach]
+:: Fully endorse Ray's POV 4 [No Naj Aach]
 Rod:  No way.  He's irresponsible.
 [[Alright.  Let's hear more about that.|Ambition Rod's side 4]]
 [[Look, if you're going to be touchly like this and not speak up, I can't help you.|Surly FAIL]]
 
 
-:: Fully endorse Rod's POV 4 [A_Rod Hmph Saj Aach]
+:: Fully endorse Rod's POV 4 [Risks Saj Aach]
 Rod:  Ray takes too many risks.  When we started working together, I knew that he was in it for the glory, but I didn't realize how irresponsible he could be.  I just wish he would behave more conscientiously.
 [[Alright.  I think you have a point there.  Ray, maybe you should be more responsible?|Ray submits amb]]
 [[I'm not quite sure about that.  It is my professional opinion that you should lighten up.|Surly FAIL]]
@@ -591,7 +600,7 @@ Rod:  Although it does seem that some of that spending was important.
 [[Great!  I think we've made a lot of progress here.  Your fifty minutes is up, but I'd like to continue next week if possible.| Done]]
 
 
-:: Money Rod's side 4 1 [Risks Saj Aach]
+:: Money Rod's side 4 1 [Grumble Saj Aach]
 Rod: ...
 [[Rod, you're going to have to speak up.|Fully endorse Rod's POV 4 1]]
 [[Alright, Rod.  We can come back to you.  Ray, what do you think.|Money Ray's side 4 1]]
@@ -604,7 +613,7 @@ Rod:  Your spending really is out of control.
 [[Then let's take a look at your budgeting.|Money 3]]
 
 
-:: Money Ray's side 4 1 [Want Naj Aach]
+:: Money Ray's side 4 1 [Image Naj Aach]
 Ray:  It's a truth a lot of people don't want to accept, but image is important in heroing.  If you don't look the part, people don't trust you, and if people don't trust you, bad things happen.  Rod has his thing going on, and it's not that expensive, but my look takes green to keep up.  And, yeah, I treat myself every once in a while, but it's honestly not that much, and I think I deserve at least that.
 [[That sounds reasonable.  Rod, I think you should let Ray have some more freedom.|Fully endorse Ray's POV 4 1]]
 [[I can certainly see why that might be frustrating.  Rod, what do you think about all of this?|Money Rod's side 4 1]]
@@ -657,7 +666,7 @@ Rod:  I do NOT want to be you.  You're so arogant.  How did I stand this for so 
 [[Rod, you clearly feel strongly about this.  Tell me more.|Envy Rod's side 2]]
 
 
-:: Envy Fail 2 [E_Fail Outrage Saj Aach End]
+:: Envy Fail 2 [E_Fail Outrage2 Saj Aach End]
 Rod:  I will not stand for this.  What kind of therapist are you anyway?  Ray, our relationship, romantic and otherwise, is through.  Good luck not getting shot.
 
 
@@ -667,13 +676,13 @@ Rod:  You finally admit it.  I was starting to think I was going crazy.  Thank y
 [[Great!  I think we're making some progress here.  Now what else would you like to talk about?| Ambition unresolved]]
 
 
-:: Fully endorse Ray's POV 4 1 [A_Ray Sure Naj Aach]
+:: Fully endorse Ray's POV 4 1 [No Naj Aach]
 Rod:  No way.  He's irresponsible.
 [[Alright.  Let's hear more about that.|Money Rod's side 4 1]]
 [[Look, if you're going to be touchly like this and not speak up, I can't help you.|Surly FAIL]]
 
 
-:: Fully endorse Rod's POV 4 1 [A_Rod Hmph Saj Aach]
+:: Fully endorse Rod's POV 4 1 [Electrician Saj Aach]
 Rod:  Okay, so I work a day job as an electrician.  Between that and Ray's job as a freelance journalist, we barely pull in enough to pay the bills.  Despite this fact, Ray insists on living beyond his means.  It's not just irresponsable; it's disrepectful since I do a lion's share of the work around the house in addition to earning half of the money.
 [[Alright.  I think you have a point there.  Ray, maybe you should be more frugal?|Ray submits money 1]]
 [[I'm not quite sure about that.  It is my professional opinion that you should lighten up.|Surly FAIL]]
@@ -703,7 +712,7 @@ Rod:  I do NOT want to be you.  You're so arogant.  How did I stand this for so 
 [[Rod, you clearly feel strongly about this.  Tell me more.|Envy Rod's side 4]]
 
 
-:: EAY 2 [Jerk Aaj Aach]
+:: EAY 2 [Outrage Aaj Aach]
 Rod:  My "perspective" is that Ray is an arogant jerk, and he's making this whole thing up.
 [[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right 2]]
 [[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail 2]]
@@ -717,7 +726,7 @@ Rod:  I do not!  Why are we even entertaining this?  It is absolutely insensitiv
 [[I agree with you, Rod.  Ray, I think if you look at this from Rod's point of view, you might find that you are imagining this.|E Rod's Right 2]]
 
 
-:: Surly FAIL [E_Fail Outrage Saj Aach End]
+:: Surly FAIL [Mistake Saj Aach End]
 Rod:  You know what?  It was a mistake to come here.  I'm leaving.  Ray, our relationship, romantic and otherwise, is through.  Good luck not getting shot.
 
 
@@ -748,7 +757,7 @@ Ray:  I guess I can cut back on some spending.  Hmph, I will regret to see this 
 [[Great!  I think we're making some progress here.  Now what else would you like to talk about?| Ambition unresolved]]
 
 
-:: EAY 4 [Jerk Aaj Aach]
+:: EAY 4 [Outrage Aaj Aach]
 Rod:  My "perspective" is that Ray is an arogant jerk, and he's making this whole thing up.
 [[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right 4]]
 [[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail]]
@@ -830,7 +839,8 @@ Rod:  Your spending really is out of control.  And you are simply irresponsable.
 
 
 :: Synergy 3 [powers Naj Nach]
-Rod: Our powers depend on each other to be effective.  I can absorb energy...
+Ray: Our powers depend on each other to be effective.
+Rod:  I can absorb energy...
 Ray: ... and I can discharge it.  Seperately, we're not nearly as great as we are together.
 [[I see. Tell me more about your work together.|Ambition two sides 3]]
 
@@ -847,7 +857,7 @@ Ray:  Hmph.  Well, if you really think so, I guess I'm just being selfish.  I gu
 [[Great!  I think we've made a lot of progress here.  Your fifty minutes is up, but I'd like to continue next week if possible.| Done]]
 
 
-:: Envy Fail [E_Fail Outrage Saj Aach End]
+:: Envy Fail [E_Fail Outrage2 Saj Aach End]
 Rod:  I will not stand for this.  What kind of therapist are you anyway?  Ray, our relationship, romantic and otherwise, is through.  Good luck not getting shot.
 
 
@@ -913,7 +923,7 @@ Rod:  And I should be more sensitive about what you want and ease up a bit.  Wit
 [[Great!  I think we've made a lot of progress here.  Your fifty minutes is up, but I'd like to continue next week if possible.| Done]]
 
 
-:: EAY [Jerk Aaj Aach]
+:: EAY [Outrage Aaj Aach]
 Rod:  My "perspective" is that Ray is an arogant jerk, and he's making this whole thing up.
 [[I'm inclined to agree with you on that.  Ray?  Thoughts?|E Rod's Right]]
 [[Hmm, I'm not sure about that.  I mean, look at Ray.  What isn't there to be envious of?|Envy Fail]]
@@ -946,7 +956,8 @@ Rod: Well, I already told you about how Ray takes too many risks.  When we start
 
 
 :: Synergy 2 [powers Naj Nach]
-Rod: Our powers depend on each other to be effective.  I can absorb energy...
+Ray: Our powers depend on each other to be effective.
+Rod:  I can absorb energy...
 Ray: ... and I can discharge it.  Seperately, we're not nearly as great as we are together.
 [[I see. Tell me more about your work together.|Ambition two sides 2]]
 
