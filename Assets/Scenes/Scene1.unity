@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 241201271}
   - 212: {fileID: 241201272}
+  - 114: {fileID: 241201273}
   m_Layer: 0
   m_Name: RodSprite
   m_TagString: Untagged
@@ -174,6 +175,21 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 03e1a8ba392aa4235998bea9940b4c01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &241201273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 241201270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1de1b1c369ed476c989e2c108058d0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rodHappy: {fileID: 21300000, guid: 000831ab7a6d44f7bbf5658f6aa6a574, type: 3}
+  rodSad: {fileID: 21300000, guid: 42eef73cd8e1544c8bd0f6a17996f745, type: 3}
+  rodAngry: {fileID: 21300000, guid: 47760bcc3b7574a7eb2287d6dc9c67e5, type: 3}
+  rodNeutral: {fileID: 21300000, guid: 03e1a8ba392aa4235998bea9940b4c01, type: 3}
 --- !u!1 &265368115
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +392,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: 0
   notePadObject: {fileID: 0}
+  blankSprite: {fileID: 0}
+  raySprite: {fileID: 0}
+  rodSprite: {fileID: 0}
 --- !u!114 &461222910
 MonoBehaviour:
   m_ObjectHideFlags: 0
